@@ -1,0 +1,16 @@
+title: Mrinmoy Haloi
+description: >-
+  A Front End developer a passion of making great websites.
+url: ""
+twitter_username: _mrinmoy_haloi_
+github_username:  mrinmoyhaloi
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+sass:
+    style: compressed
+
+collections:
+  - projects
