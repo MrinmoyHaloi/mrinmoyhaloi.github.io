@@ -36,14 +36,14 @@ spans.forEach((span) => {
 });
 
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.defaults({ markers: true });
+ScrollTrigger.defaults({});
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".text", { opacity: "100%", duration: 0.7 })
-tl.to(".text", { x: "0%", duration: 1.3 }, "-=.5")
-tl.to(".text", { y: "0%", duration: 1.3, stagger: 0.25 }, "-=2")
-tl.to(".slider", { y: "-100%", duration: 1.5, delay: 3.5 })
-tl.to(".intro", { y: "-100%", duration: 1 }, "-=1")
+tl.to(".text", { opacity: "100%", duration: 0.7 });
+tl.to(".text", { x: "0%", duration: 1.3 }, "-=.5");
+tl.to(".text", { y: "0%", duration: 1.3, stagger: 0.25 }, "-=2");
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 3.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
 tl.fromTo(
     ".first-text span",
@@ -187,7 +187,7 @@ gsap.fromTo(
     ".language, .tool",
     {
         translateY: 20,
-        opacity: 0
+        opacity: 0,
     },
     {
         scrollTrigger: {
@@ -206,7 +206,7 @@ gsap.fromTo(
     ".project",
     {
         translateY: 20,
-        opacity: 0
+        opacity: 0,
     },
     {
         scrollTrigger: {
@@ -216,7 +216,7 @@ gsap.fromTo(
         },
         translateY: 0,
         opacity: 1,
-        duration: .3,
+        duration: 0.3,
         stagger: 0.2,
     }
 );
@@ -225,7 +225,7 @@ gsap.fromTo(
     ".contact-form input, textarea, button",
     {
         translateY: 20,
-        opacity: 0
+        opacity: 0,
     },
     {
         scrollTrigger: {
@@ -235,11 +235,10 @@ gsap.fromTo(
         },
         translateY: 0,
         opacity: 1,
-        duration: .2,
+        duration: 0.2,
         stagger: 0.1,
     }
 );
-
 
 const container = ".skills-cloud";
 const texts = [
