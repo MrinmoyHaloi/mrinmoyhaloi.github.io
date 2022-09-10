@@ -117,17 +117,8 @@ layout: home
         <h2 class="split-text project-title">Projects</h2>
         <p>Here are some of my projects. Click on them to know more.</p>
         <div class="portfolio-container mt-3">
-            {% for project in site.projects %}
-            <div class="project">
-                <a href="{{ project.link }}" rel="noopener" target="_blank">
-                    <img alt="{{ project.img-alt }}" src="{{ project.img }}" loading="lazy"
-                        class="hover-opacity img-fluid">
-                    <b>{{ project.title }} </b>
-                    {% if project.subtitle %}
-                    - {{ project.subtitle }}
-                    {% endif %}
-                </a>
-            </div>
+            {% for project in site.data.projects %}
+                {% include project.html project=project %}
             {% endfor %}
         </div>
     </section>
@@ -145,12 +136,12 @@ layout: home
         <div class="more-info">
             <h2 class="split-text get-in-touch-title">Get in touch</h2>
             <ul class="personal-info">
-                <li><i class="bi-geo-alt-fill"></i> Assam, India</li>
-                <li><i class="bi-envelope"></i> mrinmoy@duck.com</li>
+                <li><i class="bi-geo-alt-fill"></i> {{ site.location }}</li>
+                <li><i class="bi-envelope"></i> {{ site.email }}</li>
             </ul>
             <ul class="social mt-3">
-                <li><a href="https://github.com/mrinmoyhaloi"><i class="bi-github"></i></a></li>
-                <li><a href="https://twitter.com/_mrinmoy_haloi_"><i class="bi-twitter"></i></a></li>
+                <li><a href="https://github.com/{{ site.github }}" target="_blank"><i class="bi-github"></i></a></li>
+                <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="bi-twitter"></i></a></li>
             </ul>
         </div>
     </section>
@@ -160,7 +151,7 @@ layout: home
     </footer>
 </main>
 
-<div class="intro">
+<!-- <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
                 <span class="text" style="transform: translateX(-100%); opacity: 0%;">“How you look at it is pretty much how you'll see it”</span>
@@ -170,4 +161,4 @@ layout: home
             </h1>
         </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->

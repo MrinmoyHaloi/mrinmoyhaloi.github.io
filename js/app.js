@@ -19,6 +19,58 @@ function splitText(element, item_class) {
 
 splitText(".split-text", "split-item");
 const headingDiv = document.querySelector(".heading");
+// .project-[link,title,desc,log,stars,langs]
+// get all the projects and then get the data-project attribute
+const projects = document.querySelectorAll(".project");
+projects.forEach((project) => {
+    // get the elements of the project
+    const link = project.querySelector(".project-link");
+    const title = project.querySelector(".project-title");
+    const desc = project.querySelector(".project-desc");
+    const logo = project.querySelector(".project-logo");
+    const stars = project.querySelector(".project-stars");
+    const langs = project.querySelector(".project-langs");
+    // use the data-project attribute to get the project data from the github api
+    // example data-project= MrinmoyHaloi/weather-app
+    const project_name = project.getAttribute("data-project");
+    const url = `https://api.github.com/repos/${project_name}`;
+    fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+            // get the project data
+            const project_title = data.name;
+            const project_desc = data.description;
+            const project_link = data.html_url;
+            const project_stars = data.stargazers_count;
+            let project_langs;
+            // request the languages of the project
+            const langs_url = `https://api.github.com/repos/${project_name}/languages`;
+            fetch(langs_url)
+                .then((response) => response.json())
+                .then((data) => {
+                    // get the languages of the project
+                    project_langs = Object.keys(data);
+                    // set the project data
+                    project_langs.forEach((lang) => {
+                        langs.textContent += lang + ", ";
+                        // if its the last element then remove the last comma
+                        if (lang === project_langs[project_langs.length - 1]) {
+                            langs.textContent = langs.textContent.slice(0, -2);
+                        }
+                    });
+                });
+
+            const project_logo = data.owner.avatar_url;
+            // set the project data
+            link.setAttribute("href", project_link);
+            title.textContent = project_title;
+            desc.textContent = project_desc;
+            logo.setAttribute("src", project_logo);
+            stars.textContent = project_stars;
+            langs.textContent = project_langs;
+        });
+});
+
 let spans = document.querySelectorAll(".heading span");
 let beforeShadow =
     "1px 1px 0px #4a00e0, 2px 2px 0px #4a00e0, 3px 3px 0px #4a00e0, 4px 4px 0px #4a00e0";
@@ -39,11 +91,11 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({});
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".text", { opacity: "100%", duration: 0.7 });
-tl.to(".text", { x: "0%", duration: 1.3 }, "-=.5");
-tl.to(".text", { y: "0%", duration: 1.3, stagger: 0.25 }, "-=2");
-tl.to(".slider", { y: "-100%", duration: 1.5, delay: 3.5 });
-tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+// tl.to(".text", { opacity: "100%", duration: 0.7 });
+// tl.to(".text", { x: "0%", duration: 1.3 }, "-=.5");
+// tl.to(".text", { y: "0%", duration: 1.3, stagger: 0.25 }, "-=2");
+// tl.to(".slider", { y: "-100%", duration: 1.5, delay: 3.5 });
+// tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
 tl.fromTo(
     ".first-text span",
@@ -230,8 +282,8 @@ gsap.fromTo(
     {
         scrollTrigger: {
             trigger: ".contact-form",
-            start: "top-=100 center",
-            end: "top-=100 center",
+            start: "top-=150 center",
+            end: "top-=150 center",
         },
         translateY: 0,
         opacity: 1,

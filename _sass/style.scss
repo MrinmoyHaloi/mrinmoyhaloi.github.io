@@ -209,12 +209,15 @@ $accent: #4a00e0;
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 28rem));
+    grid-template-columns: repeat(auto-fit, 28rem);
+    grid-auto-rows: 13rem;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     .project {
         margin-inline: auto;
-        display: inline-block;
+        width: 100%;
+        display: grid;
+        align-items: center;
     }
 }
 
@@ -236,7 +239,7 @@ $accent: #4a00e0;
         .social {
             display: flex;
             gap: 1rem;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
     .contact-form {
