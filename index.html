@@ -2,34 +2,53 @@
 layout: home
 ---
 <main>
+    <div class="cursor"></div>
     <nav class="navbar">
         <label for="check" class="bar">
-            <input id="check" type="checkbox">
-
+            <input id="check" type="checkbox" class="menu-toggle">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
         </label>
-        <!-- <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-            </ul> -->
+        <div class="menu">
+            <div class="close-btn menu-close">
+                <i class="bi bi-x"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <ul class="social-links">
+                    <li class="github">
+                        <a href="https://github.com/mrinmoyhaloi"><i class="bi bi-github"></i></a>
+                    </li>
+                    <li class="stackover">
+                        <a href="https://stackoverflow.com/users/15559063/mrinmoy-haloi"><i class="bi bi-stack-overflow"></i></a>
+                    </li>
+                    <li class="twitter">
+                        <a href="https://twitter.com/_mrinmoy_haloi_"><i class="bi bi-twitter"></i></a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
     </nav>
     <section class="landing">
         <div>
-            <h1 class="heading">
+            <h1 class="heading cursor-invert">
                 <div class="first-text split-text">
                     Hello,
                 </div>
                 <div class="second-text split-text">
-                    I'm  Mrinmoy
+                    I'm
                 </div>
-                <div class="third-text split-text">
-                    Haloi
+                <div class="third-text">
+                    <div class="split-text" style="margin-right: 1rem">
+                        Mrinmoy
+                    </div>
+                    <div class="split-text">
+                        Haloi
+                    </div>
                 </div>
             </h1>
 
@@ -40,7 +59,7 @@ layout: home
         <div class="about-text">
             <h2 class="split-text about-title">Myself,</h2>
 
-            <p>I'm <span style="color: #7840ff">Mrinmoy Haloi</span>, a Front
+            <p>I'm <span style="background-color: #4a00e0;">Mrinmoy Haloi</span>, a Front
                 End developer located in India with a passion of making great
                 websites.</p>
 
@@ -79,7 +98,7 @@ layout: home
                 </ul>
             </div>
         </div>
-        <div id="myCanvasContainer">
+        <div class="skill-canvas">
             <canvas width="500" height="500" id="myCanvas">
                 <ul class="tags">
                     <li><a onclick="return false"><img src="assets/brand-logos/html-logo.png" width="40"
@@ -113,16 +132,18 @@ layout: home
             </canvas>
         </div>
     </section>
-    <section class="container">
-        <h2 class="split-text project-title">Projects</h2>
-        <p>Here are some of my projects. Click on them to know more.</p>
-        <div class="portfolio-container mt-3">
-            {% for project in site.data.projects %}
+    <section class="projects-section container">
+        <div class="projects">
+            <h2 class="split-text project-title">Projects</h2>
+            <p>Here are some of my projects. Click on them to know more.</p>
+            <div class="portfolio-container mt-3">
+                {% for project in site.data.projects %}
                 {% include project.html project=project %}
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </section>
-    <section class="container contact-section">
+    <section class="contact-section container">
         <div>
             <h2 class="split-text message-title">Send a message</h2>
             <form action="/" class="contact-form">
@@ -152,13 +173,13 @@ layout: home
 </main>
 
 <!-- <div class="intro">
-        <div class="intro-text">
-            <h1 class="hide">
-                <span class="text" style="transform: translateX(-100%); opacity: 0%;">“How you look at it is pretty much how you'll see it”</span>
-            </h1>
-            <h1 class="hide mt-4">
-                <span class="text" style="font-size: 2.2rem;">― Rasheed Ogunlaru</span>
-            </h1>
-        </div>
+    <div class="intro-text">
+        <h1 class="hide">
+            <span class="text" style="transform: translateX(-100%); opacity: 0%;">“How you look at it is pretty much how you'll see it”</span>
+        </h1>
+        <h1 class="hide mt-4">
+            <span class="text" style="font-size: 2.2rem;">― Rasheed Ogunlaru</span>
+        </h1>
     </div>
-    <div class="slider"></div> -->
+</div>
+<div class="slider"></div> -->

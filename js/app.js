@@ -1,5 +1,5 @@
 function splitText(element, item_class) {
-    elements = document.querySelectorAll(element);
+    let elements = document.querySelectorAll(element);
     elements.forEach((element) => {
         const text = element.textContent.trim();
         const letters = text.split("");
@@ -18,7 +18,53 @@ function splitText(element, item_class) {
 }
 
 splitText(".split-text", "split-item");
+
 const headingDiv = document.querySelector(".heading");
+const menuToggle = document.querySelector(".menu-toggle");
+const menuClose = document.querySelector(".menu-close");
+const menu = document.querySelector(".menu");
+const cursor = document.querySelector(".cursor");
+const cursorGrow = document.querySelectorAll("h2.split-text, .language, .tool, .btn, .project,form *, .nav-links li");
+let spans = document.querySelectorAll(".heading span");
+
+cursorGrow.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+        cursor.classList.add("cursor-grow-change");
+    });
+    item.addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-grow-change");
+    });
+});
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+menuClose.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    menuToggle.checked = false;
+})
+
+window.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+});
+
+spans.forEach((span) => {
+    // add animated class when span is hovered
+    span.addEventListener("mouseover", () => {
+        span.classList.add("animated");
+        cursor.classList.add("cursor-invert-change");
+    });
+    span.addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-invert-change");
+    });
+    span.addEventListener("animationend", () => {
+        cursor.classList.remove("cursor-invert-change");
+    });
+});
+
+
 // .project-[link,title,desc,log,stars,langs]
 // get all the projects and then get the data-project attribute
 const projects = document.querySelectorAll(".project");
@@ -31,7 +77,7 @@ projects.forEach((project) => {
     const stars = project.querySelector(".project-stars");
     const langs = project.querySelector(".project-langs");
     // use the data-project attribute to get the project data from the github api
-    // example data-project= MrinmoyHaloi/weather-app
+    // example data-project = MrinmoyHaloi/weather-app
     const project_name = project.getAttribute("data-project");
     const url = `https://api.github.com/repos/${project_name}`;
     fetch(url)
@@ -49,8 +95,8 @@ projects.forEach((project) => {
                 .then((response) => response.json())
                 .then((data) => {
                     // get the languages of the project
-                    project_langs = Object.keys(data);
-                    // set the project data
+                    project_langs = Object.keys(data).slice(0, 4);
+
                     project_langs.forEach((lang) => {
                         langs.textContent += lang + ", ";
                         // if its the last element then remove the last comma
@@ -71,24 +117,13 @@ projects.forEach((project) => {
         });
 });
 
-let spans = document.querySelectorAll(".heading span");
 let beforeShadow =
     "1px 1px 0px #4a00e0, 2px 2px 0px #4a00e0, 3px 3px 0px #4a00e0, 4px 4px 0px #4a00e0";
 let afterShadow =
     "1px 1px 0px #4a00e0, 2px 2px 0px #4a00e0, 3px 3px 0px #4a00e0, 4px 4px 0px #4a00e0, 5px 5px 0px #4a00e0, 6px 6px 0px #4a00e0, 7px 7px 0px #4a00e0, 8px 8px 0px #4a00e0, 9px 9px 0px #4a00e0, 10px 10px 0px #4a00e0";
 
-spans.forEach((span) => {
-    // add animated class when span is hovered
-    span.addEventListener("mouseover", () => {
-        span.classList.add("animated");
-    });
-    span.addEventListener("animationend", () => {
-        span.classList.remove("animated");
-    });
-});
 
-gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.defaults({});
+
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 // tl.to(".text", { opacity: "100%", duration: 0.7 });

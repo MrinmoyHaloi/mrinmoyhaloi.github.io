@@ -1,4 +1,4 @@
-<div class="project" style="border: 2px solid white; padding: 1.5rem;" data-project="{{include.project}}">
+<div class="project cursor-grow" data-project="{{include.project}}">
     <a class="project-link" href="#" target="_blank">
         <div style="display: grid; gap: .7rem">
             <div style="display:flex;align-items: center; justify-content: space-between; gap:1rem">
@@ -9,9 +9,9 @@
                 </div>
                 <img class="project-logo" style="border-radius: 1rem;" src="" alt="project logo" width="70">
             </div>
-            <div>
-                <b>Stars <i class="bi bi-star"></i></b>: <span class="project-stars"></span> <br>
-                <b>Languages <i class="bi bi-code-slash"></i></b>: <span class="project-langs"></span>
+            <div class="more-info">
+                <span class="langs"><b><i class="bi bi-code-slash"></i></b>: <span class="project-langs"></span></span>
+                <span class="stars"><b><i class="bi bi-star"></i></b>: <span class="project-stars"></span></span> 
             </div>
         </div>
     </a>
