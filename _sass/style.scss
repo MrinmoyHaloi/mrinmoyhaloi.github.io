@@ -156,7 +156,6 @@ main:hover {
     }
     .menu {
         &.active {
-            top: 0;
             opacity: 1;
         }
         .close-btn {
@@ -174,13 +173,20 @@ main:hover {
         position: absolute;
         z-index: 1;
         left: 0;
-        top: -130vw;
+        top: 0;
         opacity: 0;
         padding: 5rem;
         background-color: rgb(26, 26, 26);
         display: flex;
         justify-content: space-between;
-        transition: 1s;
+        transition: .5s;
+        @media screen and (max-width: 576px) {
+            padding: 3rem 2rem;
+            .nav-links {
+                margin: auto;
+                font-size: 3rem !important;
+            }
+        }
         .nav-links {
             display: flex;
             flex-direction: column;
