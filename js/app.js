@@ -23,18 +23,7 @@ const headingDiv = document.querySelector(".heading");
 const menuToggle = document.querySelector(".menu-toggle");
 const menuClose = document.querySelector(".menu-close");
 const menu = document.querySelector(".menu");
-const cursor = document.querySelector(".cursor");
-const cursorGrow = document.querySelectorAll("h2.split-text, .language, .tool, .btn, .project,form *, .nav-links li");
 let spans = document.querySelectorAll(".heading span");
-
-cursorGrow.forEach((item) => {
-    item.addEventListener("mouseover", () => {
-        cursor.classList.add("cursor-grow-change");
-    });
-    item.addEventListener("mouseout", () => {
-        cursor.classList.remove("cursor-grow-change");
-    });
-});
 
 menuToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
@@ -43,27 +32,17 @@ menuToggle.addEventListener("click", () => {
 menuClose.addEventListener("click", () => {
     menu.classList.toggle("active");
     menuToggle.checked = false;
-})
-
-window.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.pageX + "px";
-    cursor.style.top = e.pageY + "px";
 });
 
 spans.forEach((span) => {
     // add animated class when span is hovered
     span.addEventListener("mouseover", () => {
         span.classList.add("animated");
-        cursor.classList.add("cursor-invert-change");
-    });
-    span.addEventListener("mouseout", () => {
-        cursor.classList.remove("cursor-invert-change");
     });
     span.addEventListener("animationend", () => {
-        cursor.classList.remove("cursor-invert-change");
+        span.classList.remove("animated");
     });
 });
-
 
 // .project-[link,title,desc,log,stars,langs]
 // get all the projects and then get the data-project attribute
@@ -122,8 +101,6 @@ let beforeShadow =
 let afterShadow =
     "1px 1px 0px #4a00e0, 2px 2px 0px #4a00e0, 3px 3px 0px #4a00e0, 4px 4px 0px #4a00e0, 5px 5px 0px #4a00e0, 6px 6px 0px #4a00e0, 7px 7px 0px #4a00e0, 8px 8px 0px #4a00e0, 9px 9px 0px #4a00e0, 10px 10px 0px #4a00e0";
 
-
-
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 // tl.to(".text", { opacity: "100%", duration: 0.7 });
@@ -139,7 +116,7 @@ tl.fromTo(
     },
     {
         textShadow: afterShadow,
-        duration: 0.3,
+        duration: 0.31,
         stagger: 0.1,
     },
     "-=.6"

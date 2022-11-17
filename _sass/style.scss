@@ -7,42 +7,13 @@ $accent: #4a00e0;
     @return $shadow-list;
 }
 
-.cursor {
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid $accent;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    z-index: 2;
-    transition: 0.1s, transform 0.5s, opacity, backdrop-filter 0.4s;
-    opacity: 0;
-    &.cursor-invert-change {
-        backdrop-filter: invert(100%);
-        transform: scale(2);
-    }
-    &.cursor-grow-change {
-        transform: scale(1.5);
-    }
-    @media (pointer: coarse) {
-        display: none;
-    }
-}
-
-main:hover {
-    .cursor {
-        opacity: 1;
-    }
-}
-
 .landing {
     height: 100vh;
     display: grid;
     align-items: center;
     padding-inline: 5rem;
     h1 {
-        font-size: 4.6rem;
+        font-size: 4rem;
         font-weight: 400;
         line-height: 6.4rem;
         font-family: "Rubik Mono One", sans-serif;
@@ -54,7 +25,7 @@ main:hover {
             text-shadow: gen-shadow(10);
             @keyframes shadow-animation {
                 0% {
-                    text-shadow: gen-shadow(10);
+                    text-shadow: gen-shadow(10) !important;
                 }
                 50% {
                     text-shadow: gen-shadow(4);
@@ -84,6 +55,11 @@ main:hover {
             line-height: 4rem;
         }
     }
+    @media screen and (max-width: 420px) {
+        h1 {
+            font-size: 2.3rem;
+        }
+    }
     @media screen and (max-width: 960px) {
         h1 {
             .third-text {
@@ -108,6 +84,7 @@ main:hover {
     }
 
     .bar {
+        cursor: pointer;
         position: relative;
         width: 50px;
         height: 30px;
@@ -157,6 +134,7 @@ main:hover {
     .menu {
         &.active {
             opacity: 1;
+            right: 0;
         }
         .close-btn {
             position: absolute;
@@ -164,22 +142,24 @@ main:hover {
             top: -12px;
             display: flex;
             align-items: center;
+            cursor: pointer;
             i {
                 font-size: 5rem;
             }
         }
         height: 100vh;
-        width: 100%;
+        width: 80%;
         position: absolute;
         z-index: 1;
-        left: 0;
+        right: -100vw;
         top: 0;
         opacity: 0;
         padding: 5rem;
         background-color: rgb(26, 26, 26);
         display: flex;
         justify-content: space-between;
-        transition: .5s;
+        transition: 1s right, .5s opacity;
+        border-top-left-radius: 4rem;
         @media screen and (max-width: 576px) {
             padding: 3rem 2rem;
             .nav-links {
@@ -429,6 +409,7 @@ main:hover {
         }
         button {
             margin-inline-end: auto;
+            cursor: pointer;
         }
     }
 }
@@ -436,6 +417,7 @@ main:hover {
 footer {
     background-color: #0f0f0f;
     text-align: center;
+    font-weight: 500;
     padding-block: 2rem;
 }
 .split-item {
