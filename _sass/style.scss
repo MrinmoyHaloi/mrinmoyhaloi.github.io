@@ -134,7 +134,7 @@ $accent: #4a00e0;
     .menu {
         &.active {
             opacity: 1;
-            right: 0;
+            transform: translateX(0%);
         }
         .close-btn {
             position: absolute;
@@ -151,14 +151,15 @@ $accent: #4a00e0;
         width: 80%;
         position: absolute;
         z-index: 1;
-        right: -100vw;
+        right: 0;
         top: 0;
         opacity: 0;
+        transform: translateX(100%);
         padding: 5rem;
         background-color: rgb(26, 26, 26);
         display: flex;
         justify-content: space-between;
-        transition: 1s right, .5s opacity;
+        transition: .7s transform, .5s opacity;
         border-top-left-radius: 4rem;
         @media screen and (max-width: 576px) {
             padding: 3rem 2rem;
