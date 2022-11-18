@@ -23,6 +23,7 @@ body {
     color: white !important;
     background-color: #040303;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     ::selection {
         background-color: $accent
     }

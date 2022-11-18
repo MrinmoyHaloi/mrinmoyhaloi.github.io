@@ -103,11 +103,11 @@ let afterShadow =
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".text", { opacity: "100%", duration: 0.7 });
-tl.to(".text", { x: "0%", duration: 1.3 }, "-=.5");
-tl.to(".text", { y: "0%", duration: 1.3, stagger: 0.25 }, "-=2");
-tl.to(".slider", { y: "-100%", duration: 1.5, delay: 3.5 });
-tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+// tl.to(".text", { opacity: "100%", duration: 0.7 });
+// tl.to(".text", { x: "0%", duration: 1.3 }, "-=.5");
+// tl.to(".text", { y: "0%", duration: 1.3, stagger: 0.25 }, "-=2");
+// tl.to(".slider", { y: "-100%", duration: 1.5, delay: 3.5 });
+// tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
 tl.fromTo(
     ".first-text span",
