@@ -20,19 +20,7 @@ function splitText(element, item_class) {
 splitText(".split-text", "split-item");
 
 const headingDiv = document.querySelector(".heading");
-const menuToggle = document.querySelector(".menu-toggle");
-const menuClose = document.querySelector(".menu-close");
-const menu = document.querySelector(".menu");
 let spans = document.querySelectorAll(".heading span");
-
-menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
-
-menuClose.addEventListener("click", () => {
-    menu.classList.toggle("active");
-    menuToggle.checked = false;
-});
 
 spans.forEach((span) => {
     // add animated class when span is hovered
