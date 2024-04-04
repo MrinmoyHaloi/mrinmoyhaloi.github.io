@@ -2,17 +2,22 @@
 	<section class="landing-section">
 		<div class="title-box">
 			<h1>
-				<span>Front-End Dev.</span>
+				<span>Front-End dev.</span>
 				<br />
-				<span>Based in</span>
-				<span>Assam, India</span>
+				<span style="margin-right: 2rem;">Based in</span>
+				<span class="address">Assam, India</span>
 			</h1>
 		</div>
 		<div class="bottom-box">
-			<div><span>Mrinmoy Haloi</span><br /><span>Web dev · designer</span></div>
+			<div>
+				<span>Mrinmoy Haloi</span>
+				<br />
+				<span style="font-weight: 200;">Front End dev · Web designer</span>
+			</div>
+			<a href="#about-section" class="arrow-down"><i>˅</i></a>
 		</div>
 	</section>
-	<section class="about-section">
+	<section class="about-section" id="about-section">
 		<h2>Myself,</h2>
 		<p>
 			I'm Mrinmoy Haloi, a Front End Developer from India. I specialize in creating user-friendly
@@ -63,8 +68,34 @@
 <style lang="scss">
 	.landing-section {
 		height: 100dvh;
-		display: grid;
-		place-items: center;
+		display: flex;
+		flex-direction: column;
+		width: 85%;
+		margin: auto;
+
+		.title-box {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			h1 {
+				font-size: 7rem;
+				font-weight: 400;
+				span.address {
+					font-size: 2.5rem;
+					display: inline-block;
+					width: min-content;
+					font-weight: 300;
+					color: hsl(180, 100%, 45%);
+				}
+			}
+		}
+
+		.bottom-box {
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.3rem;
+		}
 	}
 	.about-section {
 		height: 100vh;
@@ -77,5 +108,9 @@
 	}
 	.contact-section {
 		height: 100vh;
+	}
+
+	section {
+		padding: 2rem;
 	}
 </style>
