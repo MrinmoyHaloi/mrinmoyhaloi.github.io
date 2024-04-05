@@ -70,7 +70,7 @@
 		height: 100dvh;
 		display: flex;
 		flex-direction: column;
-		width: 85%;
+		width: 80%;
 		margin: auto;
 
 		.title-box {
@@ -95,6 +95,16 @@
 			display: flex;
 			justify-content: space-between;
 			font-size: 1.3rem;
+			.arrow-down {
+				font-size: 2.2rem;
+				color: hsl(0, 0%, 100%);
+				text-decoration: none;
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					color: hsl(180, 100%, 35%);
+					transform: translateY(0.2rem);
+				}
+			}
 		}
 	}
 	.about-section {
@@ -111,6 +121,6 @@
 	}
 
 	section {
-		padding: 2rem;
+		padding-block: 2rem;
 	}
 </style>
