@@ -51,6 +51,21 @@
 	</section>
 	<section class="contact-section">
 		<h2>Contact</h2>
+		<form action="/">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="" />
+
+			<label for="name">Email</label>
+			<input type="text" name="name" id="" />
+
+			<label for="name">Subject</label>
+			<input type="text" name="name" id="" />
+
+			<label for="name">Message</label>
+			<textarea name="name" id="" rows="10" />
+
+			<button type="submit">Submit</button>
+		</form>
 		<ul>
 			<li>
 				<a href="mailto:example@email.com">Email</a>
@@ -112,15 +127,37 @@
 	}
 	.skills-section {
 		height: 100vh;
+		ul {
+			display: flex;
+			gap: 1rem;
+			li {
+				list-style-type: none;
+				border: 2px solid hsl(180, 100%, 45%);
+				padding: 0.4rem 0.7rem;
+				border-radius: 10px;
+			}
+		}
 	}
 	.projects-section {
 		height: 100vh;
+		ul {
+			display: flex;
+			justify-content: space-evenly;
+			li {
+				list-style-type: none;
+				border: 2px solid hsl(180, 100%, 45%);
+				padding: 10rem 15rem;
+			}
+		}
 	}
 	.contact-section {
 		height: 100vh;
 	}
 
 	section {
+		margin-inline: auto;
 		padding-block: 2rem;
+		width: 80%;
+		// border: 2px solid red;
 	}
 </style>
