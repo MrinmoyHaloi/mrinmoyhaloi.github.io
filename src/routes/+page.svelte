@@ -14,15 +14,27 @@
 				<br />
 				<span style="font-weight: 200;">Front End dev · Web designer</span>
 			</div>
-			<a href="#about-section" class="arrow-down"><i>˅</i></a>
+			<a href="#about" class="arrow-down"><i>˅</i></a>
 		</div>
 	</section>
-	<section class="about-section" id="about-section">
-		<h2>Myself,</h2>
-		<p>
-			I'm Mrinmoy Haloi, a Front End Developer from India. I specialize in creating user-friendly
-			interfaces with Svelte, bringing designs to life with precision and efficiency.
-		</p>
+	<section class="about-section" id="about">
+		<div class="about-text">
+			<h2>Myself,</h2>
+			<p>I'm Mrinmoy Haloi, a Front End Developer from India.</p>
+			<p>
+				I specialize in creating user-friendly interfaces with Svelte, bringing designs to life with
+				precision and efficiency.
+			</p>
+			<a href="#contact">Get in touch</a>
+		</div>
+		<div class="about-img">
+			<img
+				src="https://mrinmoy.is-a.dev/assets/logo-dark-transparent.png"
+				alt="logo"
+				width="450"
+				height="450"
+			/>
+		</div>
 	</section>
 	<section class="skills-section">
 		<h2>Skills</h2>
@@ -49,7 +61,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="contact-section">
+	<section class="contact-section" id="contact">
 		<h2>Contact</h2>
 		<form action="/">
 			<label for="name">Name</label>
@@ -124,6 +136,12 @@
 	}
 	.about-section {
 		height: 100vh;
+		display: flex;
+		.about-text {
+			p {
+				margin-block: 1rem;
+			}
+		}
 	}
 	.skills-section {
 		height: 100vh;
