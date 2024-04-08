@@ -54,7 +54,7 @@
 		<h2>Projects</h2>
 		<ul>
 			<li>
-				<a href="#">Project 1</a>
+				<a href="https://github.com/SwirlLang/Swirl">Swirl Lang</a>
 			</li>
 			<li>
 				<a href="#">Project 2</a>
