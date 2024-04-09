@@ -20,12 +20,12 @@
 	<section class="about-section" id="about">
 		<div class="about-text">
 			<h2>Myself,</h2>
-			<p>I'm Mrinmoy Haloi, a Front End Developer from India.</p>
+			<p>I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer hailing from the coasts of India.</p>
 			<p>
 				I specialize in creating user-friendly interfaces with Svelte, bringing designs to life with
 				precision and efficiency.
 			</p>
-			<a href="#contact">Get in touch</a>
+			<a href="#contact" class="btn">Get in touch</a>
 		</div>
 		<div class="about-img">
 			<img
@@ -140,6 +140,22 @@
 		.about-text {
 			p {
 				margin-block: 1rem;
+				.name {
+					text-decoration: underline;
+					text-underline-offset: 2px;
+                    text-decoration-color: hsl(180, 100%, 45%);
+				}
+			}
+			.btn {
+				margin-top: 2rem;
+				display: inline-block;
+				border: 2px solid hsl(180, 100%, 45%);
+				border-radius: 0.5rem;
+				padding: 1rem 2rem;
+				color: white;
+				font-weight: 500;
+				text-decoration: none;
+				cursor: pointer;
 			}
 		}
 	}
@@ -152,7 +168,7 @@
 				list-style-type: none;
 				border: 2px solid hsl(180, 100%, 45%);
 				padding: 0.4rem 0.7rem;
-				border-radius: 10px;
+				border-radius: .5rem;
 			}
 		}
 	}
