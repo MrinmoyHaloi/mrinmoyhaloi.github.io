@@ -57,7 +57,7 @@
 				<a href="https://github.com/SwirlLang/Swirl">Swirl Lang</a>
 			</li>
 			<li>
-				<a href="#">Project 2</a>
+				<a href="#d">Project 2</a>
 			</li>
 		</ul>
 	</section>
@@ -74,7 +74,7 @@
 			<input type="text" name="name" id="" />
 
 			<label for="name">Message</label>
-			<textarea name="name" id="" rows="10" />
+			<textarea name="name" id="" rows="10"></textarea>
 
 			<button type="submit">Submit</button>
 		</form>
