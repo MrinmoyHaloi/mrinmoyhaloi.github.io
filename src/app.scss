@@ -1,7 +1,7 @@
 /* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components.css';
+@import 'tailwindcss/utilities.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 * {
@@ -14,6 +14,7 @@ html {
 	scroll-behavior: smooth;
 	font-family: 'Outfit', sans-serif;
 	font-optical-sizing: auto;
+	overflow-x: hidden;
 }
 
 body {
@@ -30,4 +31,22 @@ h2 {
 p {
 	font-size: 1.7rem;
 	line-height: 2.7rem;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #707070;
 }

@@ -1,4 +1,11 @@
-<main>
+<script lang="ts">
+	import Icon from '@iconify/svelte';
+</script>
+
+<main class="relative">
+	<div class="glow top-[-75rem] left-[-55rem]"></div>
+	<div class="glow top-0 left-[40rem]"></div>
+	<div class="glow top-[90rem] left-[-75rem]"></div>
 	<section class="landing-section">
 		<div class="title-box">
 			<h1>
@@ -8,19 +15,30 @@
 				<span class="address">Assam, India</span>
 			</h1>
 		</div>
-		<div class="bottom-box">
-			<div>
+		<div class="bottom-box pb-4">
+			<div class="flex gap-6">
 				<span>Mrinmoy Haloi</span>
-				<br />
-				<span style="font-weight: 200;">Front End dev · Web designer</span>
+				<div class="flex items-center gap-3 hover:*:text-slate-300">
+					<a href="https://github.com/mrinmoyhaloi" target="_blank">
+						<Icon icon="fa-brands:github" />
+					</a>
+					<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
+						<Icon icon="fa-brands:linkedin" />
+					</a>
+				</div>
 			</div>
-			<a href="#about" class="arrow-down"><i>˅</i></a>
+			<a href="#about" class="arrow-down"
+				><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a
+			>
 		</div>
 	</section>
 	<section class="about-section" id="about">
 		<div class="about-text">
 			<h2>Myself,</h2>
-			<p>I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer hailing from the coasts of India.</p>
+			<p>
+				I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer hailing from the coasts
+				of India.
+			</p>
 			<p>
 				I specialize in creating user-friendly interfaces with Svelte, bringing designs to life with
 				precision and efficiency.
@@ -93,13 +111,20 @@
 </main>
 
 <style lang="scss">
+	.glow {
+		position: absolute;
+		width: 130rem;
+		height: 130rem;
+		background: radial-gradient(circle, rgba(0, 230, 230, 0.47) 0%, transparent 60%);
+		z-index: -99;
+	}
+
 	.landing-section {
 		height: 100dvh;
 		display: flex;
 		flex-direction: column;
 		width: 80%;
 		margin: auto;
-
 		.title-box {
 			height: 100%;
 			display: flex;
@@ -143,7 +168,7 @@
 				.name {
 					text-decoration: underline;
 					text-underline-offset: 2px;
-                    text-decoration-color: hsl(180, 100%, 45%);
+					text-decoration-color: hsl(180, 100%, 45%);
 				}
 			}
 			.btn {
@@ -168,7 +193,7 @@
 				list-style-type: none;
 				border: 2px solid hsl(180, 100%, 45%);
 				padding: 0.4rem 0.7rem;
-				border-radius: .5rem;
+				border-radius: 0.5rem;
 			}
 		}
 	}
