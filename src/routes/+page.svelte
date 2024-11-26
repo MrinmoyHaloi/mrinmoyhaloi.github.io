@@ -3,9 +3,6 @@
 </script>
 
 <main class="relative">
-	<div class="glow top-[-75rem] left-[-55rem]"></div>
-	<div class="glow top-0 left-[40rem]"></div>
-	<div class="glow top-[90rem] left-[-75rem]"></div>
 	<section class="landing-section">
 		<div class="title-box">
 			<h1>
@@ -15,7 +12,7 @@
 				<span class="address">Assam, India</span>
 			</h1>
 		</div>
-		<div class="bottom-box pb-4">
+		<div class="bottom-box pb-6">
 			<div class="flex gap-6">
 				<span>Mrinmoy Haloi</span>
 				<div class="flex items-center gap-3 hover:*:text-slate-300">
@@ -33,25 +30,39 @@
 		</div>
 	</section>
 	<section class="about-section" id="about">
-		<div class="about-text">
-			<h2>Myself,</h2>
-			<p>
-				I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer hailing from the coasts
-				of India.
-			</p>
-			<p>
-				I specialize in creating user-friendly interfaces with Svelte, bringing designs to life with
-				precision and efficiency.
-			</p>
-			<a href="#contact" class="btn">Get in touch</a>
-		</div>
-		<div class="about-img">
-			<img
-				src="https://mrinmoy.is-a.dev/assets/logo-dark-transparent.png"
-				alt="logo"
-				width="450"
-				height="450"
-			/>
+		<div class="m-auto flex gap-16 *:flex-1">
+			<div class="about-text">
+				<h2>Myself,</h2>
+				<p>
+					I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India with
+					4 years of programming experience.
+				</p>
+				<p>I specialize in creating user-friendly and performant interfaces with Svelte.</p>
+				<div class="w-24">
+					<div
+						class="css-awsm flex w-14 flex-col
+					border-2 border-white p-1 font-medium">
+						<span>CSS</span>
+						<span>IS</span>
+						<span>AWESOME</span>
+					</div>
+				</div>
+				<!-- <a href="#contact" class="btn">Get in touch</a> -->
+			</div>
+			<div class="skills">
+				<h2>Skills</h2>
+				<ul>
+					<li><Icon icon="skill-icons:html" width="1.2em" height="1.2em" />HTML</li>
+					<li><Icon icon="skill-icons:css" width="1.2em" height="1.2em" />CSS</li>
+					<li><Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript</li>
+					<li><Icon icon="skill-icons:python-dark" width="1.2em" height="1.2em" />Python</li>
+					<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
+					<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+					<li><Icon icon="skill-icons:git" width="1.2em" height="1.2em" />Git</li>
+					<li><Icon icon="skill-icons:github-dark" width="1.2em" height="1.2em" />GitHub</li>
+					<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 	<section class="skills-section">
@@ -108,6 +119,9 @@
 			</li>
 		</ul>
 	</section>
+	<div class="glow left-[-55rem] top-[-75rem]"></div>
+	<div class="glow left-[40rem] top-0"></div>
+	<div class="glow left-[-75rem] top-[90rem]"></div>
 </main>
 
 <style lang="scss">
@@ -131,7 +145,7 @@
 			justify-content: center;
 			align-items: center;
 			h1 {
-				font-size: 7rem;
+				font-size: 8rem;
 				font-weight: 400;
 				span.address {
 					font-size: 2.5rem;
@@ -166,9 +180,14 @@
 			p {
 				margin-block: 1rem;
 				.name {
-					text-decoration: underline;
-					text-underline-offset: 2px;
-					text-decoration-color: hsl(180, 100%, 45%);
+					font-weight: 700;
+					color: hsl(180, 78%, 63%);
+				}
+			}
+			.css-awsm {
+				transition: width .4s;
+				&:hover {
+					width: 100%;
 				}
 			}
 			.btn {
@@ -181,6 +200,24 @@
 				font-weight: 500;
 				text-decoration: none;
 				cursor: pointer;
+			}
+		}
+		.skills {
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				li {
+					display: flex;
+					align-items: center;
+					gap: 0.3em;
+					list-style-type: none;
+					padding: 0.2rem 0.7rem;
+					font-weight: 500;
+					color: black;
+					background-color: white;
+					border-radius: 50rem;
+				}
 			}
 		}
 	}
