@@ -61,23 +61,10 @@
 					<li><Icon icon="skill-icons:git" width="1.2em" height="1.2em" />Git</li>
 					<li><Icon icon="skill-icons:github-dark" width="1.2em" height="1.2em" />GitHub</li>
 					<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
+					<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
 				</ul>
 			</div>
 		</div>
-	</section>
-	<section class="skills-section">
-		<h2>Skills</h2>
-		<ul>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>Python</li>
-			<li>Svelte</li>
-			<li>SCSS</li>
-			<li>Git</li>
-			<li>GitHub</li>
-			<li>Linux</li>
-		</ul>
 	</section>
 	<section class="projects-section">
 		<h2>Projects</h2>
@@ -218,19 +205,6 @@
 					background-color: white;
 					border-radius: 50rem;
 				}
-			}
-		}
-	}
-	.skills-section {
-		height: 100vh;
-		ul {
-			display: flex;
-			gap: 1rem;
-			li {
-				list-style-type: none;
-				border: 2px solid hsl(180, 100%, 45%);
-				padding: 0.4rem 0.7rem;
-				border-radius: 0.5rem;
 			}
 		}
 	}
