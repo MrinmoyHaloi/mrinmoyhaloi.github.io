@@ -41,7 +41,8 @@
 				<div class="w-24">
 					<div
 						class="css-awsm flex w-14 flex-col
-					border-2 border-white p-1 font-medium">
+					border-2 border-white p-1 font-medium"
+					>
 						<span>CSS</span>
 						<span>IS</span>
 						<span>AWESOME</span>
@@ -67,59 +68,11 @@
 		</div>
 	</section>
 	<section class="projects-section">
-		<h2>Projects</h2>
-		<ul>
-			<li>
-				<a href="https://github.com/SwirlLang/Swirl">Swirl Lang</a>
-			</li>
-			<li>
-				<a href="#d">Project 2</a>
-			</li>
-		</ul>
+		<h2 class="text-center">Projects</h2>
 	</section>
-	<section class="contact-section" id="contact">
-		<h2>Contact</h2>
-		<form action="/">
-			<label for="name">Name</label>
-			<input type="text" name="name" id="" />
-
-			<label for="name">Email</label>
-			<input type="text" name="name" id="" />
-
-			<label for="name">Subject</label>
-			<input type="text" name="name" id="" />
-
-			<label for="name">Message</label>
-			<textarea name="name" id="" rows="10"></textarea>
-
-			<button type="submit">Submit</button>
-		</form>
-		<ul>
-			<li>
-				<a href="mailto:example@email.com">Email</a>
-			</li>
-			<li>
-				<a href="social/twitter">Twitter</a>
-			</li>
-			<li>
-				<a href="https://linkedin.com/in/linkedin">LinkedIn</a>
-			</li>
-		</ul>
-	</section>
-	<div class="glow left-[-55rem] top-[-75rem]"></div>
-	<div class="glow left-[40rem] top-0"></div>
-	<div class="glow left-[-75rem] top-[90rem]"></div>
 </main>
 
 <style lang="scss">
-	.glow {
-		position: absolute;
-		width: 130rem;
-		height: 130rem;
-		background: radial-gradient(circle, rgba(0, 230, 230, 0.47) 0%, transparent 60%);
-		z-index: -99;
-	}
-
 	.landing-section {
 		height: 100dvh;
 		display: flex;
@@ -172,7 +125,7 @@
 				}
 			}
 			.css-awsm {
-				transition: width .4s;
+				transition: width 0.4s;
 				&:hover {
 					width: 100%;
 				}
@@ -209,18 +162,6 @@
 		}
 	}
 	.projects-section {
-		height: 100vh;
-		ul {
-			display: flex;
-			justify-content: space-evenly;
-			li {
-				list-style-type: none;
-				border: 2px solid hsl(180, 100%, 45%);
-				padding: 10rem 15rem;
-			}
-		}
-	}
-	.contact-section {
 		height: 100vh;
 	}
 

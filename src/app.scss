@@ -14,7 +14,7 @@ html {
 	scroll-behavior: smooth;
 	font-family: 'Outfit', sans-serif;
 	font-optical-sizing: auto;
-	overflow-x: hidden;
+	color-scheme: light dark;
 }
 
 body {
@@ -36,6 +36,7 @@ p {
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 10px;
+	height: 10px;
 }
 
 ::-webkit-scrollbar-track {
