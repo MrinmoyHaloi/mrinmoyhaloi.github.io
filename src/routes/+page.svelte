@@ -4,142 +4,223 @@
 
 <main class="relative">
 	<section class="landing-section">
-		<div class="title-box">
-			<h1>
-				<span>Front-End dev.</span>
-				<br />
-				<span style="margin-right: 2rem;">Based in</span>
-				<span class="address">Assam, India</span>
-			</h1>
-		</div>
-		<div class="bottom-box pb-6">
-			<div class="flex gap-6">
-				<span>Mrinmoy Haloi</span>
-				<div class="flex items-center gap-3 hover:*:text-slate-300">
-					<a href="https://github.com/mrinmoyhaloi" target="_blank">
-						<Icon icon="fa-brands:github" />
-					</a>
-					<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
-						<Icon icon="fa-brands:linkedin" />
-					</a>
-				</div>
+		<div class="section">
+			<div class="title-box">
+				<h1>
+					<span>Front-End dev.</span>
+					<br />
+					<span style="margin-right: 2rem;">Based in</span>
+					<span class="address">Assam, India</span>
+				</h1>
 			</div>
-			<a href="#about" class="arrow-down"
-				><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a
-			>
+			<div class="bottom-box pb-6">
+				<div class="flex gap-6">
+					<span>Mrinmoy Haloi</span>
+					<div class="flex items-center gap-3 hover:*:text-slate-300">
+						<a href="https://github.com/mrinmoyhaloi" target="_blank">
+							<Icon icon="fa-brands:github" />
+						</a>
+						<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
+							<Icon icon="fa-brands:linkedin" />
+						</a>
+					</div>
+				</div>
+				<a href="#about" class="arrow-down"
+					><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a
+				>
+			</div>
 		</div>
 	</section>
 	<section class="about-section" id="about">
-		<div class="m-auto flex gap-16 *:flex-1">
-			<div class="about-text">
-				<h2>Myself,</h2>
-				<p>
-					I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India with
-					4 years of programming experience.
-				</p>
-				<p>I specialize in creating user-friendly and performant interfaces with Svelte.</p>
-				<div class="w-24">
-					<div
-						class="css-awsm flex w-14 flex-col
-					border-2 border-white p-1 font-medium"
-					>
-						<span>CSS</span>
-						<span>IS</span>
-						<span>AWESOME</span>
+		<div class="section">
+			<div class="m-auto flex gap-16 *:flex-1">
+				<div class="about-text">
+					<h2>Myself,</h2>
+					<p>
+						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
+						with 4 years of programming experience.
+					</p>
+					<p>I specialize in creating user-friendly and performant interfaces with Svelte.</p>
+					<div class="w-24">
+						<div
+							class="css-awsm flex w-14 flex-col
+						border-2 border-white p-1 font-medium"
+						>
+							<span>CSS</span>
+							<span>IS</span>
+							<span>AWESOME</span>
+						</div>
 					</div>
+					<!-- <a href="#contact" class="btn">Get in touch</a> -->
 				</div>
-				<!-- <a href="#contact" class="btn">Get in touch</a> -->
-			</div>
-			<div class="skills">
-				<h2>Skills</h2>
-				<ul>
-					<li><Icon icon="skill-icons:html" width="1.2em" height="1.2em" />HTML</li>
-					<li><Icon icon="skill-icons:css" width="1.2em" height="1.2em" />CSS</li>
-					<li><Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript</li>
-					<li><Icon icon="skill-icons:python-dark" width="1.2em" height="1.2em" />Python</li>
-					<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
-					<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
-					<li><Icon icon="skill-icons:git" width="1.2em" height="1.2em" />Git</li>
-					<li><Icon icon="skill-icons:github-dark" width="1.2em" height="1.2em" />GitHub</li>
-					<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
-					<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
-				</ul>
+				<div class="skills">
+					<h2>Skills</h2>
+					<ul>
+						<li><Icon icon="skill-icons:html" width="1.2em" height="1.2em" />HTML</li>
+						<li><Icon icon="skill-icons:css" width="1.2em" height="1.2em" />CSS</li>
+						<li><Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript</li>
+						<li><Icon icon="skill-icons:python-dark" width="1.2em" height="1.2em" />Python</li>
+						<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
+						<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+						<li><Icon icon="skill-icons:git" width="1.2em" height="1.2em" />Git</li>
+						<li><Icon icon="skill-icons:github-dark" width="1.2em" height="1.2em" />GitHub</li>
+						<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
+						<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section class="projects-section">
-		<h2 class="text-center">Projects</h2>
+		<div class="section">
+			<h2 class="text-center">Projects</h2>
+			<div class="container">
+				<div class="inner">
+					<div class="circle"></div>
+					<div class="relative z-10">
+						<a href="https://github.com/SwirlLang/Swirl">
+							<h1 class="pb-2 text-4xl font-bold underline underline-offset-4">Swirl Lang</h1>
+						</a>
+						<p class="text-base">
+							Swirl is yet another modern, systems-level programming language focused on performance
+							and conciseness.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </main>
 
 <style lang="scss">
+	
 	.landing-section {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			width: 100%;
+			background: radial-gradient(circle at -10% -10%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
+			z-index: -1;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: radial-gradient(
+				circle at 110% 100%,
+				rgba(0, 230, 230, 0.545) 0%,
+				transparent 40%
+			);
+			z-index: -1;
+		}
+		// background-color: rebeccapurple;
 		height: 100dvh;
-		display: flex;
-		flex-direction: column;
-		width: 80%;
-		margin: auto;
-		.title-box {
+		width: 100%;
+		position: relative;
+		.section {
 			height: 100%;
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			h1 {
-				font-size: 8rem;
-				font-weight: 400;
-				span.address {
-					font-size: 2.5rem;
-					display: inline-block;
-					width: min-content;
-					font-weight: 300;
-					color: hsl(180, 100%, 45%);
+			flex-direction: column;
+			width: 80%;
+			margin: auto;
+			.title-box {
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				h1 {
+					font-size: 8rem;
+					font-weight: 400;
+					span.address {
+						font-size: 2.5rem;
+						display: inline-block;
+						width: min-content;
+						font-weight: 300;
+						color: hsl(180, 100%, 45%);
+					}
 				}
 			}
-		}
 
-		.bottom-box {
-			display: flex;
-			justify-content: space-between;
-			font-size: 1.3rem;
-			.arrow-down {
-				font-size: 2.2rem;
-				color: hsl(0, 0%, 100%);
-				text-decoration: none;
-				transition: all 0.3s ease-in-out;
-				&:hover {
-					color: hsl(180, 100%, 35%);
-					transform: translateY(0.2rem);
+			.bottom-box {
+				display: flex;
+				justify-content: space-between;
+				font-size: 1.3rem;
+				.arrow-down {
+					font-size: 2.2rem;
+					color: hsl(0, 0%, 100%);
+					text-decoration: none;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						color: hsl(180, 100%, 35%);
+						transform: translateY(0.2rem);
+					}
 				}
 			}
 		}
 	}
 	.about-section {
 		height: 100vh;
-		display: flex;
-		.about-text {
-			p {
-				margin-block: 1rem;
-				.name {
-					font-weight: 700;
-					color: hsl(180, 78%, 63%);
+		width: 100%;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			width: 100%;
+			background: radial-gradient(circle at 110% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
+			z-index: -1;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			width: 100%;
+			background: radial-gradient(circle at -10% 100%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
+			z-index: -1;
+		}
+		.section {
+			height: 100%;
+			width: 80%;
+			margin: auto;
+			display: flex;
+			.about-text {
+				p {
+					margin-block: 1rem;
+					.name {
+						font-weight: 700;
+						color: hsl(180, 78%, 63%);
+					}
 				}
-			}
-			.css-awsm {
-				transition: width 0.4s;
-				&:hover {
-					width: 100%;
+				.css-awsm {
+					transition: width 0.4s;
+					&:hover {
+						width: 100%;
+					}
 				}
-			}
-			.btn {
-				margin-top: 2rem;
-				display: inline-block;
-				border: 2px solid hsl(180, 100%, 45%);
-				border-radius: 0.5rem;
-				padding: 1rem 2rem;
-				color: white;
-				font-weight: 500;
-				text-decoration: none;
-				cursor: pointer;
+				.btn {
+					margin-top: 2rem;
+					display: inline-block;
+					border: 2px solid hsl(180, 100%, 45%);
+					border-radius: 0.5rem;
+					padding: 1rem 2rem;
+					color: white;
+					font-weight: 500;
+					text-decoration: none;
+					cursor: pointer;
+				}
 			}
 		}
 		.skills {
@@ -163,12 +244,65 @@
 	}
 	.projects-section {
 		height: 100vh;
+		width: 100%;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			width: 100%;
+			background: radial-gradient(circle at -10% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
+			z-index: -1;
+		}
+		.section {
+			height: 100%;
+			width: 80%;
+			margin: auto;
+		}
+		.container {
+		background-color: rgba(90, 90, 90, 0.401);
+		height: 600px;
+		display: grid;
+		place-items: center;
+		border-radius: .5rem;
+		backdrop-filter: blur(20px) hue-rotate(69deg);
+		.inner {
+			background-color: rgb(26, 26, 26);
+			max-width: 23rem;
+			padding: 1em;
+			border-radius: 0.5rem;
+			position: relative;
+			a {
+				h1 {
+					transition: .2s;
+					display: inline-block;
+					&:hover {
+						color: #8c61e1;
+					}
+				}
+			}
+			.circle {
+				background: radial-gradient(circle at 0% 0%, #4a00e0 0%, transparent 40%);
+				// background: blueviolet;
+				width: 17rem;
+				height: 17rem;
+				clip-path: circle(55% at 0% 0%);
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-top-left-radius: 0.5rem;
+			}
+		}
+	}
 	}
 
 	section {
 		margin-inline: auto;
 		padding-block: 2rem;
 		width: 80%;
-		// border: 2px solid red;
+		// border: 2px dashed red;
 	}
 </style>
