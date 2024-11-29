@@ -11,21 +11,23 @@
 					<br />
 					<span style="margin-right: 2rem;">Based in</span>
 					<span class="address">Assam, India</span>
+					<div class="bottom-box pb-6">
+						<div class="flex gap-6">
+							<span class="underline underline-offset-2">Mrinmoy Haloi</span>
+							<div class="flex items-center gap-3 hover:*:text-slate-300">
+								<a href="https://github.com/mrinmoyhaloi" target="_blank">
+									<Icon icon="fa-brands:github" />
+								</a>
+								<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
+									<Icon icon="fa-brands:linkedin" />
+								</a>
+							</div>
+						</div>
+					</div>
 				</h1>
 			</div>
 			<div class="bottom-box pb-6">
-				<div class="flex gap-6">
-					<span>Mrinmoy Haloi</span>
-					<div class="flex items-center gap-3 hover:*:text-slate-300">
-						<a href="https://github.com/mrinmoyhaloi" target="_blank">
-							<Icon icon="fa-brands:github" />
-						</a>
-						<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
-							<Icon icon="fa-brands:linkedin" />
-						</a>
-					</div>
-				</div>
-				<a href="#about" class="arrow-down"
+				<a href="#about" class="arrow-down ms-auto"
 					><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a
 				>
 			</div>
@@ -103,7 +105,7 @@
 			width: 100%;
 			height: 100%;
 			width: 100%;
-			background: radial-gradient(circle at -10% -10%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
+			background: radial-gradient(circle at 10% -10%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
 		}
 		&::after {
@@ -152,6 +154,7 @@
 				display: flex;
 				justify-content: space-between;
 				font-size: 1.3rem;
+				font-weight: 500;
 				.arrow-down {
 					font-size: 2.2rem;
 					color: hsl(0, 0%, 100%);
