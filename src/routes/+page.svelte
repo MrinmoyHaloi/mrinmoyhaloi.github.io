@@ -16,10 +16,10 @@
 							<span class="underline underline-offset-2">Mrinmoy Haloi</span>
 							<div class="flex items-center gap-3 hover:*:text-slate-300">
 								<a href="https://github.com/mrinmoyhaloi" target="_blank">
-									<Icon icon="fa-brands:github" />
+									<Icon icon="fa-brands:github" width="24" height="24"/>
 								</a>
 								<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
-									<Icon icon="fa-brands:linkedin" />
+									<Icon icon="fa-brands:linkedin" width="24" height="24"/>
 								</a>
 							</div>
 						</div>
@@ -53,7 +53,6 @@
 							<span>AWESOME</span>
 						</div>
 					</div>
-					<!-- <a href="#contact" class="btn">Get in touch</a> -->
 				</div>
 				<div class="skills">
 					<h2>Skills</h2>
@@ -76,18 +75,28 @@
 	<section class="projects-section">
 		<div class="section">
 			<h2 class="text-center">Projects</h2>
-			<div class="container">
-				<div class="inner">
-					<div class="circle"></div>
-					<div class="relative z-10">
-						<a href="https://github.com/SwirlLang/Swirl">
-							<h1 class="pb-2 text-4xl font-bold underline underline-offset-4">Swirl Lang</h1>
-						</a>
-						<p class="text-base">
-							Swirl is yet another modern, systems-level programming language focused on performance
-							and conciseness.
-						</p>
-					</div>
+			<div class="projects flex gap-8">
+				<div class="project">
+					<a href="https://github.com/SwirlLang/Swirl">
+						<img src="swirl.png" alt="" class="">
+						<div>
+							<h3>Swirl</h3>
+							<p>
+								The Swirl programming language webpage
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="project">
+					<a href="https://github.com/MrinmoyHaloi/FocusWave">
+						<img src="focuswave.png" alt="" class="">
+						<div>
+							<h3>FocusWave</h3>
+							<p>
+								A customizable Pomodoro timer designed to boost your productivity with a relaxing twist.
+							</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -265,41 +274,9 @@
 			width: 80%;
 			margin: auto;
 		}
-		.container {
-		background-color: rgba(90, 90, 90, 0.401);
-		height: 600px;
-		display: grid;
-		place-items: center;
-		border-radius: .5rem;
-		backdrop-filter: blur(20px) hue-rotate(69deg);
-		.inner {
-			background-color: rgb(26, 26, 26);
-			max-width: 23rem;
-			padding: 1em;
-			border-radius: 0.5rem;
-			position: relative;
-			a {
-				h1 {
-					transition: .2s;
-					display: inline-block;
-					&:hover {
-						color: #8c61e1;
-					}
-				}
-			}
-			.circle {
-				background: radial-gradient(circle at 0% 0%, #4a00e0 0%, transparent 40%);
-				// background: blueviolet;
-				width: 17rem;
-				height: 17rem;
-				clip-path: circle(55% at 0% 0%);
-				position: absolute;
-				top: 0;
-				left: 0;
-				border-top-left-radius: 0.5rem;
-			}
+		.projects {
+
 		}
-	}
 	}
 
 	section {
