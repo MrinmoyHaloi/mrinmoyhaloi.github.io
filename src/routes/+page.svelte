@@ -16,10 +16,10 @@
 							<span class="underline underline-offset-2">Mrinmoy Haloi</span>
 							<div class="flex items-center gap-3 hover:*:text-slate-300">
 								<a href="https://github.com/mrinmoyhaloi" target="_blank">
-									<Icon icon="fa-brands:github" width="24" height="24"/>
+									<Icon icon="fa-brands:github" width="24" height="24" />
 								</a>
 								<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
-									<Icon icon="fa-brands:linkedin" width="24" height="24"/>
+									<Icon icon="fa-brands:linkedin" width="24" height="24" />
 								</a>
 							</div>
 						</div>
@@ -75,25 +75,24 @@
 	<section class="projects-section">
 		<div class="section">
 			<h2 class="text-center">Projects</h2>
-			<div class="projects flex gap-8">
+			<div class="projects">
 				<div class="project">
 					<a href="https://github.com/SwirlLang/Swirl">
-						<img src="swirl.png" alt="" class="">
+						<img src="swirl.png" alt="" class="" />
 						<div>
 							<h3>Swirl</h3>
-							<p>
-								The Swirl programming language webpage
-							</p>
+							<p>The Swirl programming language webpage</p>
 						</div>
 					</a>
 				</div>
 				<div class="project">
 					<a href="https://github.com/MrinmoyHaloi/FocusWave">
-						<img src="focuswave.png" alt="" class="">
+						<img src="focuswave.png" alt="" class="" />
 						<div>
 							<h3>FocusWave</h3>
 							<p>
-								A customizable Pomodoro timer designed to boost your productivity with a relaxing twist.
+								A customizable Pomodoro timer designed to boost your productivity with a relaxing
+								twist.
 							</p>
 						</div>
 					</a>
@@ -104,7 +103,6 @@
 </main>
 
 <style lang="scss">
-	
 	.landing-section {
 		&::before {
 			content: '';
@@ -200,7 +198,11 @@
 			width: 100%;
 			height: 100%;
 			width: 100%;
-			background: radial-gradient(circle at -10% 100%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
+			background: radial-gradient(
+				circle at -10% 100%,
+				rgba(0, 230, 230, 0.545) 0%,
+				transparent 40%
+			);
 			z-index: -1;
 		}
 		.section {
@@ -275,7 +277,32 @@
 			margin: auto;
 		}
 		.projects {
-
+			display: grid;
+			column-gap: 2rem;
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			.project {
+				position: relative;
+				overflow: hidden;
+				background-color: #000;
+				border-radius: 0.5rem;
+				img {
+					width: 100%;
+					mask-image: linear-gradient(to top, transparent 10%, #000 100%);
+				}
+				div {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					padding: 1rem;
+					h3 {
+						font-size: 1.7rem;
+					}
+					p {
+						font-size: 1.2rem;
+						line-height: normal;
+					}
+				}
+			}
 		}
 	}
 
