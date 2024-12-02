@@ -28,8 +28,7 @@
 			</div>
 			<div class="bottom-box pb-6">
 				<a href="#about" class="arrow-down ms-auto"
-					><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a
-				>
+					><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a>
 			</div>
 		</div>
 	</section>
@@ -46,8 +45,7 @@
 					<div class="w-24">
 						<div
 							class="css-awsm flex w-14 flex-col
-						border-2 border-white p-1 font-medium"
-						>
+						border-2 border-white p-1 font-medium">
 							<span>CSS</span>
 							<span>IS</span>
 							<span>AWESOME</span>
