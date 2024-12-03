@@ -77,21 +77,47 @@
 				<div class="project">
 					<a href="https://github.com/SwirlLang/Swirl">
 						<img src="swirl.png" alt="" class="" />
-						<div>
+						<div class="container">
 							<h3>Swirl</h3>
 							<p>The Swirl programming language webpage</p>
+							<div class="skills">
+								<ul>
+									<li>
+										<Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte
+									</li>
+									<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+									<li>
+										<Icon icon="skill-icons:bootstrap" width="1.2em" height="1.2em" />Bootstrap
+									</li>
+									<li>
+										<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
+									</li>
+								</ul>
+							</div>
 						</div>
 					</a>
 				</div>
 				<div class="project">
 					<a href="https://github.com/MrinmoyHaloi/FocusWave">
 						<img src="focuswave.png" alt="" class="" />
-						<div>
+						<div class="container">
 							<h3>FocusWave</h3>
 							<p>
 								A customizable Pomodoro timer designed to boost your productivity with a relaxing
 								twist.
 							</p>
+							<div class="skills">
+								<ul>
+									<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
+									<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+									<li>
+										<Icon icon="skill-icons:tailwindcss-dark" width="1.2em" height="1.2em" />Tailwind
+									</li>
+									<li>
+										<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
+									</li>
+								</ul>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -250,12 +276,17 @@
 					color: black;
 					background-color: white;
 					border-radius: 50rem;
+					transition: all 0.3s;
+					cursor: pointer;
+					&:hover {
+						background-color: rgb(188, 188, 188);
+					}
 				}
 			}
 		}
 	}
 	.projects-section {
-		height: 100vh;
+		min-height: 100vh;
 		width: 100%;
 		position: relative;
 		&::before {
@@ -264,7 +295,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 100vh;
 			width: 100%;
 			background: radial-gradient(circle at -10% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
@@ -275,29 +306,75 @@
 			margin: auto;
 		}
 		.projects {
+			margin-top: 2rem;
 			display: grid;
-			column-gap: 2rem;
-			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			gap: 2rem;
+			justify-content: center;
+			grid-auto-columns: minmax(15rem, 50rem);
 			.project {
 				position: relative;
 				overflow: hidden;
 				background-color: #000;
 				border-radius: 0.5rem;
-				img {
-					width: 100%;
-					mask-image: linear-gradient(to top, transparent 10%, #000 100%);
-				}
-				div {
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					padding: 1rem;
-					h3 {
-						font-size: 1.7rem;
+				box-shadow: 0 0 0.5rem rgba(0, 230, 230, 0.545) inset;
+				transition: all 0.3s;
+				&:hover {
+					transform: translateY(-0.5rem);
+					box-shadow: 0 0 1.3rem rgba(0, 230, 230, 0.545) inset;
+					img {
+						transform: scale(1.03);
 					}
-					p {
-						font-size: 1.2rem;
-						line-height: normal;
+					& + .project {
+						transform: translateY(0.5rem);
+					}
+				}
+				a {
+					img {
+						transition: all 0.3s;
+						width: 100%;
+						mask-image: linear-gradient(to top, transparent 10%, #000 100%);
+					}
+					.container {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						padding: 1rem 1.5rem;
+						width: 70%;
+						// background-color: rebeccapurple;
+						h3 {
+							font-size: 1.5rem;
+							font-weight: 500;
+						}
+						p {
+							font-size: 1.2rem;
+							line-height: normal;
+							color: hsl(0, 0%, 63%);
+							// transform: translateY(100%);
+						}
+						.skills {
+							margin-top: 1rem;
+							ul {
+								display: flex;
+								flex-wrap: wrap;
+								gap: 1rem;
+								li {
+									display: flex;
+									align-items: center;
+									gap: 0.3em;
+									list-style-type: none;
+									padding: 0.2rem 0.7rem;
+									font-weight: 500;
+									color: white;
+									background-color: rgb(27, 27, 27);
+									border-radius: 50rem;
+									outline: 1px solid hsl(0, 0%, 24%);
+									transition: all 0.3s;
+									&:hover {
+										background-color: rgb(48, 48, 48);
+									}
+								}
+							}
+						}
 					}
 				}
 			}
