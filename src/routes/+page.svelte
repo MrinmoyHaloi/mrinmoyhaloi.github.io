@@ -54,17 +54,25 @@
 				</div>
 				<div class="skills">
 					<h2>Skills</h2>
+					<h3>Languages and Frameworks</h3>
 					<ul>
 						<li><Icon icon="skill-icons:html" width="1.2em" height="1.2em" />HTML</li>
 						<li><Icon icon="skill-icons:css" width="1.2em" height="1.2em" />CSS</li>
 						<li><Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript</li>
-						<li><Icon icon="skill-icons:python-dark" width="1.2em" height="1.2em" />Python</li>
 						<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
 						<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+						<li><Icon icon="skill-icons:tailwindcss-dark" width="1.2em" height="1.2em" />Tailwind</li>
+						<li><Icon icon="skill-icons:bootstrap" width="1.2em" height="1.2em" />Bootstrap</li>
+						<li><Icon icon="skill-icons:python-dark" width="1.2em" height="1.2em" />Python</li>
+					</ul>
+					<h3>Tools</h3>
+					<ul>
 						<li><Icon icon="skill-icons:git" width="1.2em" height="1.2em" />Git</li>
 						<li><Icon icon="skill-icons:github-dark" width="1.2em" height="1.2em" />GitHub</li>
 						<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
 						<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
+						<li><Icon icon="skill-icons:npm-dark" width="1.2em" height="1.2em" />NPM</li>
+						<li><Icon icon="skill-icons:bun-dark" width="1.2em" height="1.2em" />Bun</li>
 					</ul>
 				</div>
 			</div>
@@ -262,6 +270,10 @@
 			}
 		}
 		.skills {
+			h3 {
+				font-size: 1.2rem;
+				margin-block: 1rem;
+			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
