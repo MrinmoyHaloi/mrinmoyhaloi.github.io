@@ -61,7 +61,9 @@
 						<li><Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript</li>
 						<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
 						<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
-						<li><Icon icon="skill-icons:tailwindcss-dark" width="1.2em" height="1.2em" />Tailwind</li>
+						<li>
+							<Icon icon="skill-icons:tailwindcss-dark" width="1.2em" height="1.2em" />Tailwind
+						</li>
 						<li><Icon icon="skill-icons:bootstrap" width="1.2em" height="1.2em" />Bootstrap</li>
 						<li><Icon icon="skill-icons:python-dark" width="1.2em" height="1.2em" />Python</li>
 					</ul>
@@ -119,7 +121,10 @@
 									<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
 									<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
 									<li>
-										<Icon icon="skill-icons:tailwindcss-dark" width="1.2em" height="1.2em" />Tailwind
+										<Icon
+											icon="skill-icons:tailwindcss-dark"
+											width="1.2em"
+											height="1.2em" />Tailwind
 									</li>
 									<li>
 										<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
@@ -135,7 +140,16 @@
 </main>
 
 <style lang="scss">
+	.section {
+		height: 100%;
+		width: 80%;
+		margin-inline: auto;
+		padding-block: 2rem;
+		// border: 2px dashed cyan;
+	}
 	.landing-section {
+		height: 100dvh;
+		position: relative;
 		&::before {
 			content: '';
 			position: absolute;
@@ -161,16 +175,9 @@
 			);
 			z-index: -1;
 		}
-		// background-color: rebeccapurple;
-		height: 100dvh;
-		width: 100%;
-		position: relative;
 		.section {
-			height: 100%;
 			display: flex;
 			flex-direction: column;
-			width: 80%;
-			margin: auto;
 			.title-box {
 				height: 100%;
 				display: flex;
@@ -209,7 +216,6 @@
 	}
 	.about-section {
 		height: 100vh;
-		width: 100%;
 		position: relative;
 		&::before {
 			content: '';
@@ -238,9 +244,6 @@
 			z-index: -1;
 		}
 		.section {
-			height: 100%;
-			width: 80%;
-			margin: auto;
 			display: flex;
 			.about-text {
 				p {
@@ -255,17 +258,6 @@
 					&:hover {
 						width: 100%;
 					}
-				}
-				.btn {
-					margin-top: 2rem;
-					display: inline-block;
-					border: 2px solid hsl(180, 100%, 45%);
-					border-radius: 0.5rem;
-					padding: 1rem 2rem;
-					color: white;
-					font-weight: 500;
-					text-decoration: none;
-					cursor: pointer;
 				}
 			}
 		}
@@ -299,7 +291,6 @@
 	}
 	.projects-section {
 		min-height: 100vh;
-		width: 100%;
 		position: relative;
 		&::before {
 			content: '';
@@ -311,11 +302,6 @@
 			width: 100%;
 			background: radial-gradient(circle at -10% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
-		}
-		.section {
-			height: 100%;
-			width: 80%;
-			margin: auto;
 		}
 		.projects {
 			margin-top: 2rem;
@@ -391,12 +377,5 @@
 				}
 			}
 		}
-	}
-
-	section {
-		margin-inline: auto;
-		padding-block: 2rem;
-		width: 80%;
-		// border: 2px dashed red;
 	}
 </style>
