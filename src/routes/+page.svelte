@@ -6,11 +6,11 @@
 	<section class="landing-section">
 		<div class="section">
 			<div class="title-box">
-				<h1>
+				<h1 class="text-[4rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
 					<span>Front-End dev.</span>
 					<br />
 					<span style="margin-right: 2rem;">Based in</span>
-					<span class="address">Assam, India</span>
+					<span class="address text-[2rem] md:text-[2.3rem] lg:text-[2.5rem]">Assam, India</span>
 					<div class="bottom-box pb-6">
 						<div class="flex gap-6">
 							<span class="underline underline-offset-2">Mrinmoy Haloi</span>
@@ -34,14 +34,14 @@
 	</section>
 	<section class="about-section" id="about">
 		<div class="section">
-			<div class="m-auto flex gap-16 *:flex-1">
-				<div class="about-text">
+			<div class="m-auto flex flex-col gap-16 *:flex-1 lg:flex-row">
+				<div class="about-text mx-auto lg:w-full sm:w-10/12">
 					<h2>Myself,</h2>
-					<p>
+					<p class="max-md:text-[1.5rem] leading-9">
 						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
 						with 4 years of programming experience.
 					</p>
-					<p>I specialize in creating user-friendly and performant interfaces with Svelte.</p>
+					<p class="max-md:text-[1.5rem] leading-9">I specialize in creating user-friendly and performant interfaces with Svelte.</p>
 					<div class="w-24">
 						<div
 							class="css-awsm flex w-14 flex-col
@@ -52,7 +52,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="skills">
+				<div class="skills mx-auto lg:w-full sm:w-10/12">
 					<h2>Skills</h2>
 					<h3>Languages and Frameworks</h3>
 					<ul>
@@ -82,13 +82,13 @@
 	</section>
 	<section class="projects-section">
 		<div class="section">
-			<h2 class="text-center">Projects</h2>
+			<h2 class="md:text-center">Projects</h2>
 			<div class="projects">
 				<div class="project">
 					<a href="https://github.com/SwirlLang/Swirl">
 						<img src="swirl.png" alt="" class="" />
-						<div class="container">
-							<h3>Swirl</h3>
+						<div class="project-details">
+							<h3>Swirl Lang</h3>
 							<p>The Swirl programming language webpage</p>
 							<div class="skills">
 								<ul>
@@ -110,7 +110,7 @@
 				<div class="project">
 					<a href="https://github.com/MrinmoyHaloi/FocusWave">
 						<img src="focuswave.png" alt="" class="" />
-						<div class="container">
+						<div class="project-details">
 							<h3>FocusWave</h3>
 							<p>
 								A customizable Pomodoro timer designed to boost your productivity with a relaxing
@@ -178,16 +178,15 @@
 		.section {
 			display: flex;
 			flex-direction: column;
+			width: 85%;
 			.title-box {
 				height: 100%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				h1 {
-					font-size: 8rem;
 					font-weight: 400;
 					span.address {
-						font-size: 2.5rem;
 						display: inline-block;
 						width: min-content;
 						font-weight: 300;
@@ -215,7 +214,7 @@
 		}
 	}
 	.about-section {
-		height: 100vh;
+		min-height: 100vh;
 		position: relative;
 		&::before {
 			content: '';
@@ -223,7 +222,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 100dvh;
 			width: 100%;
 			background: radial-gradient(circle at 110% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
@@ -231,10 +230,10 @@
 		&::after {
 			content: '';
 			position: absolute;
-			top: 0;
+			bottom: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 100dvh;
 			width: 100%;
 			background: radial-gradient(
 				circle at -10% 100%,
@@ -309,6 +308,11 @@
 			gap: 2rem;
 			justify-content: center;
 			grid-auto-columns: minmax(15rem, 50rem);
+			@media screen and (width < 768px){
+				grid-auto-rows: 27rem;
+				
+			}
+			grid-auto-rows: 27rem;
 			.project {
 				position: relative;
 				overflow: hidden;
@@ -316,6 +320,7 @@
 				border-radius: 0.5rem;
 				box-shadow: 0 0 0.5rem rgba(0, 230, 230, 0.545) inset;
 				transition: all 0.3s;
+				// background-color: rebeccapurple;
 				&:hover {
 					transform: translateY(-0.5rem);
 					box-shadow: 0 0 1.3rem rgba(0, 230, 230, 0.545) inset;
@@ -329,21 +334,30 @@
 				a {
 					img {
 						transition: all 0.3s;
-						width: 100%;
 						mask-image: linear-gradient(to top, transparent 10%, #000 100%);
+						@media screen and ( width < 768px) {
+							height: 100%;
+							object-fit: cover;
+							object-position: 0%;
+							
+						}
 					}
-					.container {
+					.project-details {
 						position: absolute;
 						bottom: 0;
 						left: 0;
 						padding: 1rem 1.5rem;
-						width: 70%;
 						// background-color: rebeccapurple;
 						h3 {
 							font-size: 1.5rem;
 							font-weight: 500;
 						}
 						p {
+							@media screen and ( width < 768px) {
+								width: 100%;
+								
+							}
+							width: 70%;
 							font-size: 1.2rem;
 							line-height: normal;
 							color: hsl(0, 0%, 63%);
@@ -356,6 +370,11 @@
 								flex-wrap: wrap;
 								gap: 1rem;
 								li {
+									@media screen and ( width < 768px) {
+										font-size: 0.9rem;
+										padding: 0.1rem 0.5rem;
+										
+									}
 									display: flex;
 									align-items: center;
 									gap: 0.3em;
