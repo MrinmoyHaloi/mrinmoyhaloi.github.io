@@ -35,13 +35,15 @@
 	<section class="about-section" id="about">
 		<div class="section">
 			<div class="m-auto flex flex-col gap-16 *:flex-1 lg:flex-row">
-				<div class="about-text mx-auto lg:w-full sm:w-10/12">
+				<div class="about-text mx-auto sm:w-10/12 lg:w-full">
 					<h2>Myself,</h2>
-					<p class="max-md:text-[1.5rem] leading-9">
+					<p class="leading-9 max-md:text-[1.5rem]">
 						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
 						with 4 years of programming experience.
 					</p>
-					<p class="max-md:text-[1.5rem] leading-9">I specialize in creating user-friendly and performant interfaces with Svelte.</p>
+					<p class="leading-9 max-md:text-[1.5rem]">
+						I specialize in creating user-friendly and performant interfaces with Svelte.
+					</p>
 					<div class="w-24">
 						<div
 							class="css-awsm flex w-14 flex-col
@@ -52,7 +54,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="skills mx-auto lg:w-full sm:w-10/12">
+				<div class="skills mx-auto sm:w-10/12 lg:w-full">
 					<h2>Skills</h2>
 					<h3>Languages and Frameworks</h3>
 					<ul>
@@ -143,6 +145,9 @@
 	.section {
 		height: 100%;
 		width: 80%;
+		@media screen and (width < 768px) {
+			width: 85%;
+		}
 		margin-inline: auto;
 		padding-block: 2rem;
 		// border: 2px dashed cyan;
@@ -270,6 +275,10 @@
 				flex-wrap: wrap;
 				gap: 1rem;
 				li {
+					@media screen and (width < 768px) {
+						font-size: 0.9rem;
+						padding: 0.1rem 0.5rem;
+					}
 					display: flex;
 					align-items: center;
 					gap: 0.3em;
@@ -308,9 +317,8 @@
 			gap: 2rem;
 			justify-content: center;
 			grid-auto-columns: minmax(15rem, 50rem);
-			@media screen and (width < 768px){
+			@media screen and (width < 768px) {
 				grid-auto-rows: 27rem;
-				
 			}
 			grid-auto-rows: 27rem;
 			.project {
@@ -335,11 +343,10 @@
 					img {
 						transition: all 0.3s;
 						mask-image: linear-gradient(to top, transparent 10%, #000 100%);
-						@media screen and ( width < 768px) {
+						@media screen and (width < 768px) {
 							height: 100%;
 							object-fit: cover;
 							object-position: 0%;
-							
 						}
 					}
 					.project-details {
@@ -352,16 +359,22 @@
 							font-size: 1.5rem;
 							font-weight: 500;
 						}
+						
 						p {
-							@media screen and ( width < 768px) {
-								width: 100%;
-								
-							}
 							width: 70%;
 							font-size: 1.2rem;
 							line-height: normal;
 							color: hsl(0, 0%, 63%);
 							// transform: translateY(100%);
+						}
+						@media screen and (width < 768px) {
+							h3 {
+								font-size: 1.3rem;
+							}
+							p {
+								width: 100%;
+								font-size: 1rem;
+							}
 						}
 						.skills {
 							margin-top: 1rem;
@@ -370,10 +383,9 @@
 								flex-wrap: wrap;
 								gap: 1rem;
 								li {
-									@media screen and ( width < 768px) {
+									@media screen and (width < 768px) {
 										font-size: 0.9rem;
 										padding: 0.1rem 0.5rem;
-										
 									}
 									display: flex;
 									align-items: center;
