@@ -6,7 +6,7 @@
 {@render children()}
 
 <footer>
-	<p class="text-center p-4">Made by myself, Mrinmoy Haloi 2024</p>
+	<p class="text-center p-4">Mrinmoy Haloi 2024</p>
 </footer>
 
 <style lang="scss">
