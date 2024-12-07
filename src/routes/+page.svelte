@@ -77,6 +77,7 @@
 						<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
 						<li><Icon icon="skill-icons:npm-dark" width="1.2em" height="1.2em" />NPM</li>
 						<li><Icon icon="skill-icons:bun-dark" width="1.2em" height="1.2em" />Bun</li>
+                                                <li><Icon icon="skill-icons:vite-dark" width="1.2em" height="1.2em" />Vite</li>
 					</ul>
 				</div>
 			</div>
