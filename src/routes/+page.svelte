@@ -259,6 +259,7 @@
 			.about-text {
 				p {
 					margin-block: 1rem;
+					font-size: 1.7rem;
 					.name {
 						font-weight: 700;
 						color: hsl(180, 78%, 63%);
