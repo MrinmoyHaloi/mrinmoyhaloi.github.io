@@ -73,11 +73,16 @@
 					<ul>
 						<li><Icon icon="skill-icons:git" width="1.2em" height="1.2em" />Git</li>
 						<li><Icon icon="skill-icons:github-dark" width="1.2em" height="1.2em" />GitHub</li>
-						<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
+						<div class="popover">
+							<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
+							<div class="popover-content">
+								<Icon icon="skill-icons:arch-dark" width="1.5em" height="1.5em" /><p>I use Arch BTW!</p>
+							</div>
+						</div>
 						<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
 						<li><Icon icon="skill-icons:npm-dark" width="1.2em" height="1.2em" />NPM</li>
 						<li><Icon icon="skill-icons:bun-dark" width="1.2em" height="1.2em" />Bun</li>
-                                                <li><Icon icon="skill-icons:vite-dark" width="1.2em" height="1.2em" />Vite</li>
+						<li><Icon icon="skill-icons:vite-dark" width="1.2em" height="1.2em" />Vite</li>
 					</ul>
 				</div>
 			</div>
@@ -276,6 +281,35 @@
 				display: flex;
 				flex-wrap: wrap;
 				gap: 1rem;
+				.popover {
+					position: relative;
+					&:hover .popover-content {
+						opacity: 1;
+						visibility: visible;
+					}
+					.popover-content {
+						display: flex;
+						align-items: center;
+						gap: 0.5rem;
+						position: absolute;
+						top: 0;
+						left: 50%;
+						transform: translateX(-50%) translateY(-120%);
+						width: max-content;
+						padding: 0 .7rem;
+						background-color: #12242e;
+						outline: #4684a5 solid 2px;
+						color: hsl(0, 0%, 100%);
+						border-radius: 0.7rem;
+						opacity: 0;
+						visibility: hidden;
+						transition: all 0.3s;
+						p {
+							font-size: 1rem;
+							font-weight: 500;
+						}
+					}
+				}
 				li {
 					@media screen and (width < 768px) {
 						font-size: 0.9rem;
@@ -361,7 +395,7 @@
 							font-size: 1.5rem;
 							font-weight: 500;
 						}
-						
+
 						p {
 							width: 70%;
 							font-size: 1.2rem;
