@@ -37,11 +37,11 @@
 			<div class="m-auto flex flex-col gap-16 *:flex-1 lg:flex-row">
 				<div class="about-text mx-auto sm:w-10/12 lg:w-full">
 					<h2>Myself,</h2>
-					<p class="leading-9 max-md:text-[1.5rem]">
+					<p class="leading-9 text-[1.5rem] md:text-[1.7rem]">
 						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
 						with 4 years of programming experience.
 					</p>
-					<p class="leading-9 max-md:text-[1.5rem]">
+					<p class="leading-9 text-[1.5rem] md:text-[1.7rem]">
 						I specialize in creating user-friendly and performant interfaces with Svelte.
 					</p>
 					<div class="w-24">
@@ -259,7 +259,6 @@
 			.about-text {
 				p {
 					margin-block: 1rem;
-					font-size: 1.7rem;
 					.name {
 						font-weight: 700;
 						color: hsl(180, 78%, 63%);
