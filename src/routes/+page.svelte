@@ -154,7 +154,7 @@
 		// border: 2px dashed cyan;
 	}
 	.landing-section {
-		height: 100dvh;
+		height: 100vh;
 		position: relative;
 		&::before {
 			content: '';
@@ -222,13 +222,14 @@
 	.about-section {
 		min-height: 100vh;
 		position: relative;
+		display: grid;
 		&::before {
 			content: '';
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100dvh;
+			height: 100vh;
 			width: 100%;
 			background: radial-gradient(circle at 110% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
@@ -239,7 +240,7 @@
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			height: 100dvh;
+			height: 100vh;
 			width: 100%;
 			background: radial-gradient(
 				circle at -10% 100%,
