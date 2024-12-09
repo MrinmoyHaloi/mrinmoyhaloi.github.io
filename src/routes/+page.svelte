@@ -37,11 +37,11 @@
 			<div class="m-auto flex flex-col gap-16 *:flex-1 lg:flex-row">
 				<div class="about-text mx-auto sm:w-10/12 lg:w-full">
 					<h2>Myself,</h2>
-					<p class="leading-9 text-[1.5rem] md:text-[1.7rem]">
+					<p class="text-[1.5rem] leading-9 md:text-[1.7rem]">
 						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
 						with 4 years of programming experience.
 					</p>
-					<p class="leading-9 text-[1.5rem] md:text-[1.7rem]">
+					<p class="text-[1.5rem] leading-9 md:text-[1.7rem]">
 						I specialize in creating user-friendly and performant interfaces with Svelte.
 					</p>
 					<div class="w-24">
@@ -76,7 +76,8 @@
 						<div class="popover">
 							<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
 							<div class="popover-content">
-								<Icon icon="skill-icons:arch-dark" width="1.5em" height="1.5em" /><p>I use Arch BTW!</p>
+								<Icon icon="skill-icons:arch-dark" width="1.5em" height="1.5em" />
+								<p>I use Arch BTW!</p>
 							</div>
 						</div>
 						<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
@@ -94,6 +95,7 @@
 			<div class="projects">
 				<div class="project">
 					<a href="https://github.com/SwirlLang/Swirl">
+						<h3 class="title">Swirl Lang <Icon icon="fa6-solid:link" style="color: #00b3b3" /></h3>
 						<img src="swirl.png" alt="" class="" />
 						<div class="project-details">
 							<h3>Swirl Lang</h3>
@@ -117,6 +119,7 @@
 				</div>
 				<div class="project">
 					<a href="https://github.com/MrinmoyHaloi/FocusWave">
+						<h3 class="title">FocusWave <Icon icon="fa6-solid:link" style="color: #00b3b3" /></h3>
 						<img src="focuswave.png" alt="" class="" />
 						<div class="project-details">
 							<h3>FocusWave</h3>
@@ -296,7 +299,7 @@
 						left: 50%;
 						transform: translateX(-50%) translateY(-120%);
 						width: max-content;
-						padding: 0 .7rem;
+						padding: 0 0.7rem;
 						background-color: #12242e;
 						outline: #4684a5 solid 2px;
 						color: hsl(0, 0%, 100%);
@@ -371,14 +374,36 @@
 					img {
 						transform: scale(1.03);
 					}
+					img,
+					.project-details {
+						filter: blur(0.2rem);
+					}
 					& + .project {
 						transform: translateY(0.5rem);
 					}
+					.title {
+						font-size: 2.5rem;
+						opacity: 1;
+					}
 				}
 				a {
+					.title {
+						display: flex;
+						align-items: center;
+						gap: 0.5rem;
+						position: absolute;
+						z-index: 1;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: 2rem;
+						transition: 0.2s;
+						opacity: 0;
+					}
 					img {
 						transition: all 0.3s;
 						mask-image: linear-gradient(to top, transparent 10%, #000 100%);
+						filter: blur(0);
 						@media screen and (width < 768px) {
 							height: 100%;
 							object-fit: cover;
@@ -390,15 +415,16 @@
 						bottom: 0;
 						left: 0;
 						padding: 1rem 1.5rem;
+						transition: all 0.3s;
 						// background-color: rebeccapurple;
 						h3 {
-							font-size: 1.5rem;
-							font-weight: 500;
+							font-size: 1.7rem;
+							font-weight: 600;
 						}
 
 						p {
-							width: 70%;
-							font-size: 1.2rem;
+							width: 30rem;
+							font-size: 1.1rem;
 							line-height: normal;
 							color: hsl(0, 0%, 63%);
 							// transform: translateY(100%);
