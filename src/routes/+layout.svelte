@@ -13,6 +13,7 @@
 footer {
 	p {
 		font-size: 1rem;
+		font-weight: 500;
 	}
 }
 </style>
