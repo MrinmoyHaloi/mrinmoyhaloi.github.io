@@ -76,8 +76,7 @@
 						<div class="popover">
 							<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
 							<div class="popover-content">
-								<Icon icon="skill-icons:arch-dark" width="1.5em" height="1.5em" />
-								<p>I use Arch BTW!</p>
+								<p>I use Fedora BTW!</p>
 							</div>
 						</div>
 						<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
