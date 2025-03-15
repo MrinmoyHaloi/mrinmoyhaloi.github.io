@@ -93,56 +93,56 @@
 			<h2 class="md:text-center">Projects</h2>
 			<div class="projects">
 				<div class="project">
-					<a href="https://github.com/SwirlLang/Swirl">
-						<h3 class="title">Swirl Lang <Icon icon="fa6-solid:link" style="color: #00b3b3" /></h3>
 						<img src="swirl.png" alt="" class="" />
 						<div class="project-details">
-							<h3>Swirl Lang</h3>
-							<p>The Swirl programming language webpage</p>
-							<div class="skills">
-								<ul>
-									<li>
-										<Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte
-									</li>
-									<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
-									<li>
-										<Icon icon="skill-icons:bootstrap" width="1.2em" height="1.2em" />Bootstrap
-									</li>
-									<li>
-										<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
-									</li>
-								</ul>
+							<div>
+								<h3>Swirl Lang</h3>
+								<p>The Swirl programming language webpage</p>
+								<div class="skills">
+									<ul>
+										<li>
+											<Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte
+										</li>
+										<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+										<li>
+											<Icon icon="skill-icons:bootstrap" width="1.2em" height="1.2em" />Bootstrap
+										</li>
+										<li>
+											<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
+										</li>
+									</ul>
+								</div>
 							</div>
+							<a href="https://github.com/swirllang/swirl" class="project-btn"><Icon icon="lucide:external-link" />View project</a>
 						</div>
-					</a>
-				</div>
-				<div class="project">
-					<a href="https://github.com/MrinmoyHaloi/FocusWave">
-						<h3 class="title">FocusWave <Icon icon="fa6-solid:link" style="color: #00b3b3" /></h3>
+					</div>
+					<div class="project">
 						<img src="focuswave.png" alt="" class="" />
 						<div class="project-details">
-							<h3>FocusWave</h3>
-							<p>
-								A customizable Pomodoro timer designed to boost your productivity with a relaxing
-								twist.
-							</p>
-							<div class="skills">
-								<ul>
-									<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
-									<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
-									<li>
-										<Icon
+								<div>
+								<h3>FocusWave</h3>
+								<p>
+									A customizable Pomodoro timer designed to boost your productivity with a relaxing
+									twist.
+								</p>
+								<div class="skills">
+									<ul>
+										<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
+										<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+										<li>
+											<Icon
 											icon="skill-icons:tailwindcss-dark"
 											width="1.2em"
 											height="1.2em" />Tailwind
-									</li>
-									<li>
-										<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
-									</li>
-								</ul>
-							</div>
+										</li>
+										<li>
+											<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
+										</li>
+									</ul>
+								</div>
 						</div>
-					</a>
+							<a href="https://github.com/MrinmoyHaloi/FocusWave" class="project-btn"><Icon icon="lucide:external-link" />View project</a>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -158,7 +158,6 @@
 		}
 		margin-inline: auto;
 		padding-block: 2rem;
-		// border: 2px dashed cyan;
 	}
 	.landing-section {
 		height: 100vh;
@@ -366,43 +365,22 @@
 				border-radius: 0.5rem;
 				box-shadow: 0 0 0.5rem rgba(0, 230, 230, 0.545) inset;
 				transition: all 0.3s;
-				// background-color: rebeccapurple;
 				&:hover {
-					transform: translateY(-0.5rem);
+					// transform: translateY(-0.5rem);
 					box-shadow: 0 0 1.3rem rgba(0, 230, 230, 0.545) inset;
 					img {
 						transform: scale(1.03);
 					}
-					img,
 					.project-details {
-						filter: blur(0.2rem);
-					}
-					& + .project {
-						transform: translateY(0.5rem);
-					}
-					.title {
-						font-size: 2.5rem;
-						opacity: 1;
+						.project-btn {
+							opacity: 100%;
+							transform: translateY(0);
+						}
 					}
 				}
-				a {
-					.title {
-						display: flex;
-						align-items: center;
-						gap: 0.5rem;
-						position: absolute;
-						z-index: 1;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						font-size: 2rem;
-						transition: 0.2s;
-						opacity: 0;
-					}
 					img {
 						transition: all 0.3s;
-						mask-image: linear-gradient(to top, transparent 10%, #000 100%);
-						filter: blur(0);
+						mask-image: linear-gradient(to top, transparent 15%, #000 100%);
 						@media screen and (width < 768px) {
 							height: 100%;
 							object-fit: cover;
@@ -413,8 +391,21 @@
 						position: absolute;
 						bottom: 0;
 						left: 0;
+						width: 100%;
 						padding: 1rem 1.5rem;
 						transition: all 0.3s;
+						display: flex;
+						justify-content: space-between;
+						align-items: flex-end;
+						@media screen and (width < 768px) {
+							flex-direction: column;
+							align-items: flex-start;
+							gap: 1rem;
+							.project-btn {
+								opacity: 100% !important;
+								transform: translateY(0) !important;
+							}
+						}
 						// background-color: rebeccapurple;
 						h3 {
 							font-size: 1.7rem;
@@ -426,7 +417,6 @@
 							font-size: 1.1rem;
 							line-height: normal;
 							color: hsl(0, 0%, 63%);
-							// transform: translateY(100%);
 						}
 						@media screen and (width < 768px) {
 							h3 {
@@ -465,7 +455,21 @@
 								}
 							}
 						}
-					}
+						.project-btn {
+							min-width: max-content;
+							display: flex;
+							gap: .4em;
+							align-items: center;
+							background-color: whitesmoke;
+							color: black;
+							outline: 1px solid hsl(0, 0%, 24%);
+							padding: 0.3rem 0.5rem;
+							border-radius: 0.5rem;
+							font-weight: 500;
+							transition: all 0.3s;
+							opacity: 0;
+							transform: translateY(0.5rem);
+						}
 				}
 			}
 		}
