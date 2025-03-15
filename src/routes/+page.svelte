@@ -59,7 +59,7 @@
 					<h3>Languages and Frameworks</h3>
 					<ul>
 						<li><Icon icon="skill-icons:html" width="1.2em" height="1.2em" />HTML</li>
-						<li><Icon icon="skill-icons:css" width="1.2em" height="1.2em" />CSS</li>
+						<li><Icon icon="vscode-icons:file-type-css" width="1.2em" height="1.2em" />CSS</li>
 						<li><Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript</li>
 						<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
 						<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
