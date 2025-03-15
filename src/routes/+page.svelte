@@ -58,31 +58,31 @@
 					<h2>Skills</h2>
 					<h3>Languages and Frameworks</h3>
 					<ul>
-						<li><Icon icon="skill-icons:html" width="1.2em" height="1.2em" />HTML</li>
-						<li><Icon icon="vscode-icons:file-type-css" width="1.2em" height="1.2em" />CSS</li>
-						<li><Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript</li>
-						<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
-						<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
+						<li><Icon icon="skill-icons:html" />HTML</li>
+						<li><Icon icon="vscode-icons:file-type-css" />CSS</li>
+						<li><Icon icon="skill-icons:javascript" />JavaScript</li>
+						<li><Icon icon="skill-icons:svelte" />Svelte</li>
+						<li><Icon icon="skill-icons:sass" />SCSS</li>
 						<li>
-							<Icon icon="skill-icons:tailwindcss-dark" width="1.2em" height="1.2em" />Tailwind
+							<Icon icon="skill-icons:tailwindcss-dark" />Tailwind
 						</li>
-						<li><Icon icon="skill-icons:bootstrap" width="1.2em" height="1.2em" />Bootstrap</li>
-						<li><Icon icon="skill-icons:python-dark" width="1.2em" height="1.2em" />Python</li>
+						<li><Icon icon="skill-icons:bootstrap" />Bootstrap</li>
+						<li><Icon icon="skill-icons:python-dark" />Python</li>
 					</ul>
 					<h3>Tools</h3>
 					<ul>
-						<li><Icon icon="skill-icons:git" width="1.2em" height="1.2em" />Git</li>
-						<li><Icon icon="skill-icons:github-dark" width="1.2em" height="1.2em" />GitHub</li>
+						<li><Icon icon="skill-icons:git" />Git</li>
+						<li><Icon icon="skill-icons:github-dark" />GitHub</li>
 						<div class="popover">
-							<li><Icon icon="skill-icons:linux-dark" width="1.2em" height="1.2em" />Linux</li>
+							<li><Icon icon="skill-icons:linux-dark" />Linux</li>
 							<div class="popover-content">
 								<p>I use Fedora BTW!</p>
 							</div>
 						</div>
-						<li><Icon icon="skill-icons:vscode-dark" width="1.2em" height="1.2em" />VSCode</li>
-						<li><Icon icon="skill-icons:npm-dark" width="1.2em" height="1.2em" />NPM</li>
-						<li><Icon icon="skill-icons:bun-dark" width="1.2em" height="1.2em" />Bun</li>
-						<li><Icon icon="skill-icons:vite-dark" width="1.2em" height="1.2em" />Vite</li>
+						<li><Icon icon="skill-icons:vscode-dark" />VSCode</li>
+						<li><Icon icon="skill-icons:npm-dark" />NPM</li>
+						<li><Icon icon="skill-icons:bun-dark" />Bun</li>
+						<li><Icon icon="skill-icons:vite-dark" />Vite</li>
 					</ul>
 				</div>
 			</div>
@@ -93,56 +93,55 @@
 			<h2 class="md:text-center">Projects</h2>
 			<div class="projects">
 				<div class="project">
-						<img src="swirl.png" alt="" class="" />
-						<div class="project-details">
-							<div>
-								<h3>Swirl Lang</h3>
-								<p>The Swirl programming language webpage</p>
-								<div class="skills">
-									<ul>
-										<li>
-											<Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte
-										</li>
-										<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
-										<li>
-											<Icon icon="skill-icons:bootstrap" width="1.2em" height="1.2em" />Bootstrap
-										</li>
-										<li>
-											<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
-										</li>
-									</ul>
-								</div>
+					<img src="swirl.png" alt="" class="" />
+					<div class="project-details">
+						<div>
+							<h3>Swirl Lang</h3>
+							<p>The Swirl programming language webpage</p>
+							<div class="skills">
+								<ul>
+									<li>
+										<Icon icon="skill-icons:svelte" />Svelte
+									</li>
+									<li><Icon icon="skill-icons:sass" />SCSS</li>
+									<li>
+										<Icon icon="skill-icons:bootstrap" />Bootstrap
+									</li>
+									<li>
+										<Icon icon="skill-icons:javascript" />JavaScript
+									</li>
+								</ul>
 							</div>
-							<a href="https://github.com/swirllang/swirl" class="project-btn"><Icon icon="lucide:external-link" />View project</a>
 						</div>
+						<a href="https://github.com/swirllang/swirl" class="project-btn"
+							><Icon icon="lucide:external-link" />View project</a>
 					</div>
-					<div class="project">
-						<img src="focuswave.png" alt="" class="" />
-						<div class="project-details">
-								<div>
-								<h3>FocusWave</h3>
-								<p>
-									A customizable Pomodoro timer designed to boost your productivity with a relaxing
-									twist.
-								</p>
-								<div class="skills">
-									<ul>
-										<li><Icon icon="skill-icons:svelte" width="1.2em" height="1.2em" />Svelte</li>
-										<li><Icon icon="skill-icons:sass" width="1.2em" height="1.2em" />SCSS</li>
-										<li>
-											<Icon
-											icon="skill-icons:tailwindcss-dark"
-											width="1.2em"
-											height="1.2em" />Tailwind
-										</li>
-										<li>
-											<Icon icon="skill-icons:javascript" width="1.2em" height="1.2em" />JavaScript
-										</li>
-									</ul>
-								</div>
+				</div>
+				<div class="project">
+					<img src="focuswave.png" alt="" class="" />
+					<div class="project-details">
+						<div>
+							<h3>FocusWave</h3>
+							<p>
+								A customizable Pomodoro timer designed to boost your productivity with a relaxing
+								twist.
+							</p>
+							<div class="skills">
+								<ul>
+									<li><Icon icon="skill-icons:svelte" />Svelte</li>
+									<li><Icon icon="skill-icons:sass" />SCSS</li>
+									<li>
+										<Icon icon="skill-icons:tailwindcss-dark" />Tailwind
+									</li>
+									<li>
+										<Icon icon="skill-icons:javascript" />JavaScript
+									</li>
+								</ul>
+							</div>
 						</div>
-							<a href="https://github.com/MrinmoyHaloi/FocusWave" class="project-btn"><Icon icon="lucide:external-link" />View project</a>
-						</div>
+						<a href="https://github.com/MrinmoyHaloi/FocusWave" class="project-btn"
+							><Icon icon="lucide:external-link" />View project</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -330,6 +329,10 @@
 					&:hover {
 						background-color: rgb(188, 188, 188);
 					}
+					:global(svg) {
+						width: 1.2em;
+						height: 1.2em;
+					}
 				}
 			}
 		}
@@ -378,98 +381,103 @@
 						}
 					}
 				}
-					img {
-						transition: all 0.3s;
-						mask-image: linear-gradient(to top, transparent 15%, #000 100%);
-						@media screen and (width < 768px) {
-							height: 100%;
-							object-fit: cover;
-							object-position: 0%;
+				img {
+					transition: all 0.3s;
+					mask-image: linear-gradient(to top, transparent 15%, #000 100%);
+					@media screen and (width < 768px) {
+						height: 100%;
+						object-fit: cover;
+						object-position: 0%;
+					}
+				}
+				.project-details {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					padding: 1rem 1.5rem;
+					transition: all 0.3s;
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-end;
+					@media screen and (width < 768px) {
+						flex-direction: column;
+						align-items: flex-start;
+						gap: 1rem;
+						.project-btn {
+							opacity: 100% !important;
+							transform: translateY(0) !important;
 						}
 					}
-					.project-details {
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						width: 100%;
-						padding: 1rem 1.5rem;
-						transition: all 0.3s;
-						display: flex;
-						justify-content: space-between;
-						align-items: flex-end;
-						@media screen and (width < 768px) {
-							flex-direction: column;
-							align-items: flex-start;
-							gap: 1rem;
-							.project-btn {
-								opacity: 100% !important;
-								transform: translateY(0) !important;
-							}
-						}
-						// background-color: rebeccapurple;
-						h3 {
-							font-size: 1.7rem;
-							font-weight: 600;
-						}
+					// background-color: rebeccapurple;
+					h3 {
+						font-size: 1.7rem;
+						font-weight: 600;
+					}
 
+					p {
+						width: 30rem;
+						font-size: 1.1rem;
+						line-height: normal;
+						color: hsl(0, 0%, 63%);
+					}
+					@media screen and (width < 768px) {
+						h3 {
+							font-size: 1.3rem;
+						}
 						p {
-							width: 30rem;
-							font-size: 1.1rem;
-							line-height: normal;
-							color: hsl(0, 0%, 63%);
+							width: 100%;
+							font-size: 1rem;
 						}
-						@media screen and (width < 768px) {
-							h3 {
-								font-size: 1.3rem;
-							}
-							p {
-								width: 100%;
-								font-size: 1rem;
-							}
-						}
-						.skills {
-							margin-top: 1rem;
-							ul {
+					}
+					.skills {
+						margin-top: 1rem;
+						ul {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 1rem;
+							li {
+								@media screen and (width < 768px) {
+									font-size: 0.9rem;
+									padding: 0.1rem 0.5rem;
+								}
 								display: flex;
-								flex-wrap: wrap;
-								gap: 1rem;
-								li {
-									@media screen and (width < 768px) {
-										font-size: 0.9rem;
-										padding: 0.1rem 0.5rem;
-									}
-									display: flex;
-									align-items: center;
-									gap: 0.3em;
-									list-style-type: none;
-									padding: 0.2rem 0.7rem;
-									font-weight: 500;
-									color: white;
-									background-color: rgb(27, 27, 27);
-									border-radius: 50rem;
-									outline: 1px solid hsl(0, 0%, 24%);
-									transition: all 0.3s;
-									&:hover {
-										background-color: rgb(48, 48, 48);
-									}
+								align-items: center;
+								gap: 0.3em;
+								list-style-type: none;
+								padding: 0.2rem 0.7rem;
+								font-weight: 500;
+								color: white;
+								background-color: rgb(27, 27, 27);
+								border-radius: 50rem;
+								outline: 1px solid hsl(0, 0%, 24%);
+								transition: all 0.3s;
+								cursor: pointer;
+								&:hover {
+									background-color: rgb(48, 48, 48);
+								}
+								:global(svg) {
+									width: 1.2em;
+									height: 1.2em;
 								}
 							}
 						}
-						.project-btn {
-							min-width: max-content;
-							display: flex;
-							gap: .4em;
-							align-items: center;
-							background-color: whitesmoke;
-							color: black;
-							outline: 1px solid hsl(0, 0%, 24%);
-							padding: 0.3rem 0.5rem;
-							border-radius: 0.5rem;
-							font-weight: 500;
-							transition: all 0.3s;
-							opacity: 0;
-							transform: translateY(0.5rem);
-						}
+					}
+					.project-btn {
+						min-width: max-content;
+						display: flex;
+						gap: 0.4em;
+						align-items: center;
+						background-color: whitesmoke;
+						color: black;
+						outline: 1px solid hsl(0, 0%, 24%);
+						padding: 0.3rem 0.5rem;
+						border-radius: 0.5rem;
+						font-weight: 500;
+						transition: all 0.3s;
+						opacity: 0;
+						transform: translateY(0.5rem);
+					}
 				}
 			}
 		}
