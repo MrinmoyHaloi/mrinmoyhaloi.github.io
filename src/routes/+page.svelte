@@ -366,11 +366,11 @@
 				overflow: hidden;
 				background-color: #000;
 				border-radius: 0.5rem;
-				box-shadow: 0 0 0.5rem rgba(0, 230, 230, 0.545) inset;
-				transition: all 0.3s;
+				box-shadow: 0 0 0.2rem rgba(0, 230, 230, 0.545) inset;
+				transition: all 0.1s;
 				&:hover {
 					// transform: translateY(-0.5rem);
-					box-shadow: 0 0 1.3rem rgba(0, 230, 230, 0.545) inset;
+					box-shadow: 0 0 5rem rgba(0, 230, 230, 0.345) inset;
 					img {
 						transform: scale(1.03);
 					}
