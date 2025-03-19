@@ -216,7 +216,7 @@
 					color: hsl(0, 0%, 100%);
 					text-decoration: none;
 					animation: indicateScroll 1s infinite ;
-					// transition: all 0.3s ease-in-out;
+					transition: all 0.1s ease-in-out;
 					&:hover {
 						color: hsl(180, 100%, 35%);
 						transform: translateY(0.2rem);
