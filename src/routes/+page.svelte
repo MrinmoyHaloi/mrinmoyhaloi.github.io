@@ -105,7 +105,7 @@
 									</li>
 									<li><Icon icon="skill-icons:sass" />SCSS</li>
 									<li>
-										<Icon icon="skill-icons:bootstrap" />Bootstrap
+										<Icon icon="skill-icons:tailwindcss-dark" />Tailwind
 									</li>
 									<li>
 										<Icon icon="skill-icons:javascript" />JavaScript
@@ -113,7 +113,7 @@
 								</ul>
 							</div>
 						</div>
-						<a href="https://github.com/swirllang/swirl" class="project-btn"
+						<a href="https://github.com/swirllang/website" class="project-btn"
 							><Icon icon="lucide:external-link" />View project</a>
 					</div>
 				</div>
