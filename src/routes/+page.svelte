@@ -215,10 +215,23 @@
 					font-size: 2.2rem;
 					color: hsl(0, 0%, 100%);
 					text-decoration: none;
-					transition: all 0.3s ease-in-out;
+					animation: indicateScroll 1s infinite ;
+					// transition: all 0.3s ease-in-out;
 					&:hover {
 						color: hsl(180, 100%, 35%);
 						transform: translateY(0.2rem);
+					}
+					@keyframes indicateScroll {
+						0% {
+							transform: translateY(0);
+						}
+						50% {
+							transform: translateY(0.25rem);
+						}
+						100% {
+							transform: translateY(0);
+						}
+						
 					}
 				}
 			}
