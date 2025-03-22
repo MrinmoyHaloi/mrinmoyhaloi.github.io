@@ -42,21 +42,21 @@ p {
 .section {
 	height: 100%;
 	width: 80%;
+	margin-inline: auto;
+	padding-block: 2rem;
 	@media screen and (width < 768px) {
 		width: 85%;
 	}
-	margin-inline: auto;
-	padding-block: 2rem;
 }
 
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-    width: 0.5em;
+	width: 0.5em;
 	height: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+	background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

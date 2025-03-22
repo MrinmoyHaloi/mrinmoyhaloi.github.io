@@ -74,7 +74,6 @@
 					transform: translateY(0) !important;
 				}
 			}
-			// background-color: rebeccapurple;
 			h3 {
 				font-size: 1.7rem;
 				font-weight: 600;
@@ -102,10 +101,6 @@
 					flex-wrap: wrap;
 					gap: 1rem;
 					li {
-						@media screen and (width < 768px) {
-							font-size: 0.9rem;
-							padding: 0.1rem 0.5rem;
-						}
 						display: flex;
 						align-items: center;
 						gap: 0.3em;
@@ -118,6 +113,10 @@
 						outline: 1px solid hsl(0, 0%, 24%);
 						transition: all 0.3s;
 						cursor: pointer;
+						@media screen and (width < 768px) {
+							font-size: 0.9rem;
+							padding: 0.1rem 0.5rem;
+						}
 						&:hover {
 							background-color: rgb(48, 48, 48);
 						}
