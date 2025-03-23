@@ -2,6 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import Skills from '$lib/Skills.svelte';
 	import Project from '$lib/Project.svelte';
+	import Button from '$lib/Button.svelte';
 
 	let languages = [
 		{ name: 'HTML', icon: 'skill-icons:html' },
@@ -55,23 +56,15 @@
 	<section class="landing-section">
 		<div class="section">
 			<div class="title-box">
+				<span class="name">Mrinmoy Haloi</span>
 				<h1 class="text-[4rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
 					<span>Front-End dev.</span>
 					<br />
 					<span style="margin-right: 2rem;">Based in</span>
 					<span class="address text-[2rem] md:text-[2.3rem] lg:text-[2.5rem]">Assam, India</span>
-					<div class="bottom-box pb-6">
-						<div class="flex gap-6">
-							<span class="underline underline-offset-2">Mrinmoy Haloi</span>
-							<div class="flex items-center gap-3 hover:*:text-slate-300">
-								<a href="https://github.com/mrinmoyhaloi" target="_blank">
-									<Icon icon="fa-brands:github" width="24" height="24" />
-								</a>
-								<a href="https://www.linkedin.com/in/mrinmoy-haloi" target="_blank">
-									<Icon icon="fa-brands:linkedin" width="24" height="24" />
-								</a>
-							</div>
-						</div>
+					<div class="links flex gap-6 py-6 *:transition-all">
+						<Button href="#projects" text="View My Work" className="bg-slate-50 text-black hover:bg-slate-200" />
+						<Button href="https://github.com/MrinmoyHaloi" text="Contact Me" className="bg-gray-900 hover:bg-gray-800" />
 					</div>
 				</h1>
 			</div>
@@ -107,7 +100,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="projects-section">
+	<section class="projects-section" id="projects">
 		<div class="section">
 			<h2 class="md:text-center">Projects</h2>
 			<div class="projects">
@@ -159,8 +152,16 @@
 			.title-box {
 				height: 100%;
 				display: flex;
+				flex-direction: column;
 				justify-content: center;
-				align-items: center;
+				margin-inline: auto;
+				span.name {
+					font-size: 1rem;
+					border: 1px solid hsl(0, 0%, 64%);
+					width: fit-content;
+					padding: 0.3rem 0.7rem;
+					border-radius: 10rem;
+				}
 				h1 {
 					font-weight: 400;
 					span.address {
@@ -174,9 +175,9 @@
 
 			.bottom-box {
 				display: flex;
-				justify-content: space-between;
-				font-size: 1.3rem;
-				font-weight: 500;
+				// justify-content: space-between;
+				// font-size: 1.3rem;
+				// font-weight: 500;
 				.arrow-down {
 					font-size: 2.2rem;
 					color: hsl(0, 0%, 100%);
