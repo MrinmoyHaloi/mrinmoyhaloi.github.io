@@ -63,7 +63,7 @@
 					<span style="margin-right: 2rem;">Based in</span>
 					<span class="address text-[2rem] md:text-[2.3rem] lg:text-[2.5rem]">Assam, India</span>
 					<div class="links flex gap-6 py-6 *:transition-all">
-						<Button href="#projects" text="View My Work" className="bg-slate-50 text-black hover:bg-slate-200" />
+						<Button href="#projects" text="View My Work" className="bg-slate-50 text-black hover:bg-slate-300" />
 						<Button href="https://github.com/MrinmoyHaloi" text="Contact Me" className="bg-gray-900 hover:bg-gray-800" />
 					</div>
 				</h1>
