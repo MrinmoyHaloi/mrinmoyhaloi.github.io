@@ -112,6 +112,7 @@
 						border-radius: 50rem;
 						outline: 1px solid hsl(0, 0%, 24%);
 						transition: all 0.3s;
+						font-size: .9rem;
 						cursor: pointer;
 						@media screen and (width < 768px) {
 							font-size: 0.9rem;

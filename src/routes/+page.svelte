@@ -57,14 +57,14 @@
 		<div class="section">
 			<div class="title-box">
 				<span class="name">Mrinmoy Haloi</span>
-				<h1 class="text-[4rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
+				<h1 class="text-[4rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] leading-snug">
 					<span>Front-End dev.</span>
 					<br />
 					<span style="margin-right: 2rem;">Based in</span>
 					<span class="address text-[2rem] md:text-[2.3rem] lg:text-[2.5rem]">Assam, India</span>
 					<div class="links flex gap-6 py-6 *:transition-all">
-						<Button href="#projects" text="View My Work" className="bg-slate-50 text-black hover:bg-slate-300" />
-						<Button href="https://github.com/MrinmoyHaloi" text="Contact Me" className="bg-gray-900 hover:bg-gray-800" />
+						<Button href="#projects" text="View My Work" className="bg-slate-50 text-black hover:bg-zinc-300" />
+						<Button href="https://github.com/MrinmoyHaloi" text="Contact Me" className="bg-zinc-900 hover:bg-zinc-800" />
 					</div>
 				</h1>
 			</div>
