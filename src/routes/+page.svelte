@@ -57,14 +57,20 @@
 		<div class="section">
 			<div class="title-box">
 				<span class="name">Mrinmoy Haloi</span>
-				<h1 class="text-[4rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] leading-snug">
+				<h1 class="text-[4rem] leading-snug sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
 					<span>Front-End dev.</span>
 					<br />
 					<span style="margin-right: 2rem;">Based in</span>
 					<span class="address text-[2rem] md:text-[2.3rem] lg:text-[2.5rem]">Assam, India</span>
 					<div class="links flex gap-6 py-6 *:transition-all">
-						<Button href="#projects" text="View My Work" className="bg-slate-50 text-black hover:bg-zinc-300" />
-						<Button href="https://github.com/MrinmoyHaloi" text="Contact Me" className="bg-zinc-900 hover:bg-zinc-800" />
+						<Button
+							href="#projects"
+							text="View My Work"
+							className="bg-slate-50 text-black hover:bg-zinc-300" />
+						<Button
+							href="https://github.com/MrinmoyHaloi"
+							text="Contact Me"
+							className="bg-zinc-900 hover:bg-zinc-800" />
 					</div>
 				</h1>
 			</div>
@@ -112,6 +118,91 @@
 						link={project.link}
 						image={project.image} />
 				{/each}
+			</div>
+		</div>
+	</section>
+	<section class="contact-section">
+		<div class="section">
+			<h2>Get In Touch</h2>
+			<p class="text-lg">
+				Have a project in mind or want to discuss a potential collaboration? Feel free to reach out
+				to me.
+			</p>
+			<div class="mt-16 flex gap-6 max-md:flex-col">
+				<div class="flex w-full flex-col gap-4">
+					<div class="flex items-center gap-6">
+						<div class="rounded-full bg-zinc-800 p-3">
+							<Icon icon="lucide:mail" width="24" height="24" />
+						</div>
+						<div>
+							<h3 class="font-medium">Email</h3>
+							<p class="leading-relaxed">dev.mrinmoy.haloi@gmail.com</p>
+						</div>
+					</div>
+
+					<div class="flex items-center gap-6">
+						<div class="rounded-full bg-zinc-800 p-3">
+							<Icon icon="lucide:map-pin" width="24" height="24" />
+						</div>
+						<div>
+							<h3 class="font-medium">Location</h3>
+							<p class="leading-relaxed">Guwahati, Assam, India</p>
+						</div>
+					</div>
+					<div>
+						<h3 class="mb-4">Socials</h3>
+						<div class="flex gap-4">
+							<a href="github.com" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+								<Icon icon="uil:github" width="24" height="24" />
+							</a>
+							<a href="linkedin.com" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+								<Icon icon="uil:linkedin" width="24" height="24" />
+							</a>
+							<a href="x.com" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+								<Icon icon="uil:twitter" width="24" height="24" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="w-full">
+					<form action="#" class="grid gap-5">
+						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+							<div>
+								<label for="name" class="font-medium">Your Name</label>
+								<input
+									type="text"
+									id="name"
+									class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
+							</div>
+							<div>
+								<label for="email" class="font-medium">Your Email</label>
+								<input
+									type="email"
+									id="email"
+									class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
+							</div>
+						</div>
+						<div>
+							<label for="subject" class="font-medium">Subject</label>
+							<input
+								type="text"
+								id="subject"
+								class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
+						</div>
+						<div>
+							<label for="message" class="font-medium">Message</label>
+							<textarea
+								id="message"
+								class="mt-3 h-36 w-full resize-none rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600"
+							></textarea>
+						</div>
+						<button
+							type="submit"
+							class="flex w-fit items-center gap-2 rounded-md bg-slate-50 px-4 py-2 font-medium text-black hover:bg-zinc-300"
+							>Send message <Icon icon="lucide:send" />
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>

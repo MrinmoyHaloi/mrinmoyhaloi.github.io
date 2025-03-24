@@ -33,6 +33,7 @@ h2 {
 h3 {
 	font-weight: 600;
 	margin-bottom: 0.3rem;
+	font-size: 1.2rem;
 }
 
 p {
@@ -41,10 +42,10 @@ p {
 
 .section {
 	height: 100%;
-	width: 80%;
+	width: 75%;
 	margin-inline: auto;
 	padding-block: 2rem;
-	@media screen and (width < 768px) {
+	@media screen and (width < 1024px) {
 		width: 85%;
 	}
 }
