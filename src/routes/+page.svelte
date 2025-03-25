@@ -68,7 +68,7 @@
 							text="View My Work"
 							className="bg-slate-50 text-black hover:bg-zinc-300" />
 						<Button
-							href="https://github.com/MrinmoyHaloi"
+							href="#contact"
 							text="Contact Me"
 							className="bg-zinc-900 hover:bg-zinc-800" />
 					</div>
@@ -121,7 +121,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact-section">
+	<section class="contact-section" id="contact">
 		<div class="section">
 			<h2>Get In Touch</h2>
 			<p class="text-lg">
@@ -152,13 +152,13 @@
 					<div>
 						<h3 class="mb-4">Socials</h3>
 						<div class="flex gap-4">
-							<a href="github.com" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+							<a href="https://github.com/mrinmoyhaloi" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
 								<Icon icon="uil:github" width="24" height="24" />
 							</a>
-							<a href="linkedin.com" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+							<a href="https://linkedin.com/mrinmoy-haloi" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
 								<Icon icon="uil:linkedin" width="24" height="24" />
 							</a>
-							<a href="x.com" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+							<a href="https://x.com/_mrinmoy_haloi_" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
 								<Icon icon="uil:twitter" width="24" height="24" />
 							</a>
 						</div>
