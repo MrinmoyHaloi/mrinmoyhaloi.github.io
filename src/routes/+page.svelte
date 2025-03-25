@@ -305,7 +305,6 @@
 			left: 0;
 			width: 100%;
 			height: 100vh;
-			width: 100%;
 			background: radial-gradient(circle at 110% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
 		}
@@ -316,7 +315,6 @@
 			left: 0;
 			width: 100%;
 			height: 100vh;
-			width: 100%;
 			background: radial-gradient(
 				circle at -10% 100%,
 				rgba(0, 230, 230, 0.545) 0%,
@@ -357,6 +355,20 @@
 			background: radial-gradient(circle at -10% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
 		}
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100vh;
+			background: radial-gradient(
+				circle at 110% 100%,
+				rgba(0, 230, 230, 0.545) 0%,
+				transparent 40%
+			);
+			z-index: -1;
+		}
 		.projects {
 			margin-top: 2rem;
 			display: grid;
@@ -364,6 +376,38 @@
 			justify-content: center;
 			grid-auto-columns: minmax(15rem, 50rem);
 			grid-auto-rows: 27rem;
+		}
+	}
+	.contact-section {
+		min-height: 100vh;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: radial-gradient(
+				circle at 110% 0%,
+				rgba(0, 230, 230, 0.545) 0%,
+				transparent 40%
+			);
+			z-index: -1;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: radial-gradient(
+				circle at 0% 110%,
+				rgba(0, 230, 230, 0.545) 0%,
+				transparent 40%
+			);
+			z-index: -1;
 		}
 	}
 </style>
