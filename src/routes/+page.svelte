@@ -165,13 +165,16 @@
 					</div>
 				</div>
 				<div class="w-full">
-					<form action="#" class="grid gap-5">
+					<form class="grid gap-5" action="https://formsubmit.co/32577f1a2278ad4ad33dafc2fa1e2797" method="POST">
+						<input type="hidden" name="_next" value="https://mrinmoy.is-a.dev">
+						<input type="hidden" name="_template" value="table">
 						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 							<div>
 								<label for="name" class="font-medium">Your Name</label>
 								<input
 									type="text"
 									id="name"
+									name="name"
 									class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
 							</div>
 							<div>
@@ -179,6 +182,7 @@
 								<input
 									type="email"
 									id="email"
+									name="email"
 									class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
 							</div>
 						</div>
@@ -187,12 +191,14 @@
 							<input
 								type="text"
 								id="subject"
+								name="_subject"
 								class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
 						</div>
 						<div>
 							<label for="message" class="font-medium">Message</label>
 							<textarea
 								id="message"
+								name="message"
 								class="mt-3 h-36 w-full resize-none rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600"
 							></textarea>
 						</div>
