@@ -67,10 +67,7 @@
 							href="#projects"
 							text="View My Work"
 							className="bg-slate-50 text-black hover:bg-zinc-300" />
-						<Button
-							href="#contact"
-							text="Contact Me"
-							className="bg-zinc-900 hover:bg-zinc-800" />
+						<Button href="#contact" text="Contact Me" className="bg-zinc-900 hover:bg-zinc-800" />
 					</div>
 				</h1>
 			</div>
@@ -152,22 +149,31 @@
 					<div>
 						<h3 class="mb-4">Socials</h3>
 						<div class="flex gap-4">
-							<a href="https://github.com/mrinmoyhaloi" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+							<a
+								href="https://github.com/mrinmoyhaloi"
+								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
 								<Icon icon="uil:github" width="24" height="24" />
 							</a>
-							<a href="https://linkedin.com/mrinmoy-haloi" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+							<a
+								href="https://linkedin.com/mrinmoy-haloi"
+								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
 								<Icon icon="uil:linkedin" width="24" height="24" />
 							</a>
-							<a href="https://x.com/_mrinmoy_haloi_" class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+							<a
+								href="https://x.com/_mrinmoy_haloi_"
+								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
 								<Icon icon="uil:twitter" width="24" height="24" />
 							</a>
 						</div>
 					</div>
 				</div>
 				<div class="w-full">
-					<form class="grid gap-5" action="https://formsubmit.co/32577f1a2278ad4ad33dafc2fa1e2797" method="POST">
-						<input type="hidden" name="_next" value="https://mrinmoy.is-a.dev">
-						<input type="hidden" name="_template" value="table">
+					<form
+						class="grid gap-5"
+						action="https://formsubmit.co/32577f1a2278ad4ad33dafc2fa1e2797"
+						method="POST">
+						<input type="hidden" name="_next" value="https://mrinmoy.is-a.dev" />
+						<input type="hidden" name="_template" value="table" />
 						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 							<div>
 								<label for="name" class="font-medium">Your Name</label>
@@ -175,7 +181,7 @@
 									type="text"
 									id="name"
 									name="name"
-									class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
+									class="mt-3 w-full rounded-md border border-cyan-800 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-cyan-800" />
 							</div>
 							<div>
 								<label for="email" class="font-medium">Your Email</label>
@@ -183,7 +189,7 @@
 									type="email"
 									id="email"
 									name="email"
-									class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
+									class="mt-3 w-full rounded-md border border-cyan-800 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-cyan-800" />
 							</div>
 						</div>
 						<div>
@@ -192,14 +198,14 @@
 								type="text"
 								id="subject"
 								name="_subject"
-								class="mt-3 w-full rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600" />
+								class="mt-3 w-full rounded-md border border-cyan-800 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-cyan-800" />
 						</div>
 						<div>
 							<label for="message" class="font-medium">Message</label>
 							<textarea
 								id="message"
 								name="message"
-								class="mt-3 h-36 w-full resize-none rounded-md border border-zinc-600 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-zinc-600"
+								class="mt-3 h-36 w-full resize-none rounded-md border border-cyan-800 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-cyan-800"
 							></textarea>
 						</div>
 						<button
@@ -394,11 +400,7 @@
 			left: 0;
 			width: 100%;
 			height: 100vh;
-			background: radial-gradient(
-				circle at 110% 0%,
-				rgba(0, 230, 230, 0.545) 0%,
-				transparent 40%
-			);
+			background: radial-gradient(circle at 110% 0%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
 		}
 		&::after {
@@ -408,11 +410,7 @@
 			left: 0;
 			width: 100%;
 			height: 100vh;
-			background: radial-gradient(
-				circle at 0% 110%,
-				rgba(0, 230, 230, 0.545) 0%,
-				transparent 40%
-			);
+			background: radial-gradient(circle at 0% 110%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
 		}
 	}
