@@ -49,7 +49,7 @@
 				position: absolute;
 				bottom: 0;
 				transition: all 0.3s;
-				padding: 0.7rem 1rem;
+				padding: 0.8rem;
 				padding-top: 2rem;
 				opacity: 0;
 				width: 100%;
