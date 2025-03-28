@@ -25,28 +25,31 @@
 	];
 	let projects = [
 		{
-			name: 'Swirl Lang',
-			description: 'The Swirl programming language webpage',
+			name: 'Swirl Language Website',
+			description:
+				'Official website for the Swirl programming language, featuring downloads for respective platforms based on the latest GitHub release.',
 			skills: [
 				{ name: 'Svelte', icon: 'skill-icons:svelte' },
 				{ name: 'SCSS', icon: 'skill-icons:sass' },
 				{ name: 'Tailwind', icon: 'skill-icons:tailwindcss-dark' },
 				{ name: 'JavaScript', icon: 'skill-icons:javascript' }
 			],
-			link: 'https://github.com/swirllang/website',
+			github: 'https://github.com/swirllang/website',
+			link: 'https://swirl-lang.netlify.app',
 			image: 'swirl.png'
 		},
 		{
-			name: 'FocusWave',
+			name: 'FocusWave: Pomodoro Timer',
 			description:
-				'A customizable Pomodoro timer designed to boost your productivity with a relaxing twist.',
+				'A customizable Pomodoro timer designed to enhance your productivity with a calming and focused experience. Radio support, customizable current task, and more.',
 			skills: [
 				{ name: 'Svelte', icon: 'skill-icons:svelte' },
 				{ name: 'SCSS', icon: 'skill-icons:sass' },
 				{ name: 'Tailwind', icon: 'skill-icons:tailwindcss-dark' },
 				{ name: 'JavaScript', icon: 'skill-icons:javascript' }
 			],
-			link: 'https://github.com/MrinmoyHaloi/FocusWave',
+			github: 'https://github.com/MrinmoyHaloi/FocusWave',
+			link: 'https://focus-wave.vercel.app',
 			image: 'focuswave.png'
 		}
 	];
@@ -105,15 +108,19 @@
 	</section>
 	<section class="projects-section" id="projects">
 		<div class="section">
-			<h2 class="md:text-center">Projects</h2>
+			<h2>Projects</h2>
+			<p class="text-lg">Here are some of my recent projects that showcase my skills and expertise in web development.</p>
 			<div class="projects">
-				{#each projects as project}
+				{#each projects as project, i}
 					<Project
 						name={project.name}
 						description={project.description}
 						skills={project.skills}
+						github={project.github}
 						link={project.link}
-						image={project.image} />
+						image={project.image}
+						reverse={i % 2 !== 0}
+						/>
 				{/each}
 			</div>
 		</div>
@@ -382,17 +389,15 @@
 			z-index: -1;
 		}
 		.projects {
-			margin-top: 2rem;
+			margin-top: 5rem;
 			display: grid;
-			gap: 2rem;
-			justify-content: center;
-			grid-auto-columns: minmax(15rem, 50rem);
-			grid-auto-rows: 27rem;
+			gap: 5rem;
 		}
 	}
 	.contact-section {
 		min-height: 100vh;
 		position: relative;
+		padding-top: 5rem;
 		&::before {
 			content: '';
 			position: absolute;

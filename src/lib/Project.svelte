@@ -1,100 +1,59 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 
-	let { name, description, skills, link, image } = $props();
+	let { name, description, skills, github, link, image, reverse } = $props();
 </script>
 
-<div class="project">
-	<img src={image} alt="" class="" />
-	<div class="project-details">
+<div class="project flex flex-col gap-10 lg:flex-row {reverse ? 'lg:flex-row-reverse' : ''}">
+	<div class="project-image flex-[0.6]">
+		<img src={image} alt="" class="" />
+		<div class="skills">
+			<ul>
+				{#each skills as skill}
+					<li>
+						<Icon icon={skill.icon} />
+						{skill.name}
+					</li>
+				{/each}
+			</ul>
+		</div>
+	</div>
+	<div class="project-details flex-[0.4]">
 		<div>
 			<h3>{name}</h3>
-			<p>{description}</p>
-			<div class="skills">
-				<ul>
-					{#each skills as skill}
-						<li>
-							<Icon icon={skill.icon} />
-							{skill.name}
-						</li>
-					{/each}
-				</ul>
-			</div>
+			<p class="text-zinc-300">{description}</p>
 		</div>
-		<a href={link} class="project-btn"><Icon icon="lucide:external-link" />View project</a>
+		<div class="links">
+			<a href={github} class="btn project-btn" target="_blank"><Icon icon="lucide:github" />Code</a>
+			<a href={link} class="btn demo-btn" target="_blank"><Icon icon="lucide:external-link" />Live Demo</a>
+		</div>
 	</div>
 </div>
 
 <style lang="scss">
 	.project {
-		position: relative;
-		overflow: hidden;
-		background-color: #000;
-		border-radius: 0.5rem;
-		box-shadow: 0 0 0.2rem rgba(0, 230, 230, 0.545) inset;
-		transition: all 0.1s;
-		&:hover {
-			box-shadow: 0 0 5rem rgba(0, 230, 230, 0.345) inset;
+		.project-image {
+			position: relative;
+			transition: all 0.3s;
+			border-radius: 1rem;
+			overflow: clip;
+			outline: 2px solid rgb(0, 115, 115, 0.3);
 			img {
-				transform: scale(1.03);
-			}
-			.project-details {
-				.project-btn {
-					opacity: 100%;
-					transform: translateY(0);
-				}
-			}
-		}
-		img {
-			transition: all 0.3s;
-			mask-image: linear-gradient(to top, transparent 15%, #000 100%);
-			@media screen and (width < 768px) {
-				height: 100%;
+				aspect-ratio: 16/9;
 				object-fit: cover;
-				object-position: 0%;
-			}
-		}
-		.project-details {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			padding: 1rem 1.5rem;
-			transition: all 0.3s;
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-end;
-			@media screen and (width < 768px) {
-				flex-direction: column;
-				align-items: flex-start;
-				gap: 1rem;
-				.project-btn {
-					opacity: 100% !important;
-					transform: translateY(0) !important;
-				}
-			}
-			h3 {
-				font-size: 1.7rem;
-				font-weight: 600;
-			}
-
-			p {
-				width: 30rem;
-				font-size: 1.1rem;
-				line-height: normal;
-				color: hsl(0, 0%, 63%);
-			}
-			@media screen and (width < 768px) {
-				h3 {
-					font-size: 1.3rem;
-				}
-				p {
-					width: 100%;
-					font-size: 1rem;
-				}
+				height: 100%;
+				object-position: left;
+				transition: all 0.5s;
 			}
 			.skills {
-				margin-top: 1rem;
+				position: absolute;
+				bottom: 0;
+				transition: all 0.3s;
+				padding: 0.7rem 1rem;
+				padding-top: 2rem;
+				opacity: 0;
+				width: 100%;
+				background: linear-gradient(0deg, rgb(0, 115, 115) 0%, rgba(0, 230, 230, 0) 100%);
 				ul {
 					display: flex;
 					flex-wrap: wrap;
@@ -127,20 +86,55 @@
 					}
 				}
 			}
-			.project-btn {
-				min-width: max-content;
+			&:hover {
+				.skills {
+					opacity: 1;
+				}
+				img {
+					transform: scale(1.04);
+				}
+			}
+		}
+		.project-details {
+			display: grid;
+			align-items: center;
+			align-content: center;
+			gap: 1rem;
+			h3 {
+				font-size: 1.7rem;
+				font-weight: 700;
+			}
+			p {
+				font-size: 1.1rem;
+				line-height: 1.8;
+			}
+			.links {
 				display: flex;
-				gap: 0.4em;
-				align-items: center;
-				background-color: whitesmoke;
-				color: black;
-				outline: 1px solid hsl(0, 0%, 24%);
-				padding: 0.3rem 0.5rem;
-				border-radius: 0.5rem;
-				font-weight: 500;
-				transition: all 0.3s;
-				opacity: 0;
-				transform: translateY(0.5rem);
+				gap: 1rem;
+				.btn {
+					width: fit-content;
+					display: flex;
+					gap: 0.4em;
+					align-items: center;
+					padding: 0.3rem 0.7rem;
+					border-radius: 0.3rem;
+					font-weight: 500;
+					transition: all 0.3s;
+					&.demo-btn {
+						background-color: whitesmoke;
+						color: black;
+						&:hover {
+							background-color: rgb(170, 170, 170);
+						}
+					}
+					&.project-btn {
+						background-color: rgb(38, 38, 38);
+						color: white;
+						&:hover {
+							background-color: rgb(61, 61, 61);
+						}
+					}
+				}
 			}
 		}
 	}
