@@ -140,7 +140,7 @@
 						</div>
 						<div>
 							<h3 class="font-medium">Email</h3>
-							<p class="leading-relaxed">dev.mrinmoy.haloi@gmail.com</p>
+							<a class="leading-relaxed" href="mailto:dev.mrinmoy.haloi@gmail.com">dev.mrinmoy.haloi@gmail.com</a>
 						</div>
 					</div>
 
