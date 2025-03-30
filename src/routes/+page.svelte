@@ -92,7 +92,7 @@
 					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.7rem]">
 						I specialize in creating user-friendly and performant interfaces with Svelte.
 					</p>
-					<div class="w-24">
+					<div class="w-24 mt-5">
 						<div
 							class="css-awsm flex w-14 flex-col
 						border-2 border-white p-1 font-medium">
@@ -109,7 +109,10 @@
 	<section class="projects-section" id="projects">
 		<div class="section">
 			<h2>Projects</h2>
-			<p class="text-lg">Here are some of my recent projects that showcase my skills and expertise in web development.</p>
+			<p class="text-lg">
+				Here are some of my recent projects that showcase my skills and expertise in web
+				development.
+			</p>
 			<div class="projects">
 				{#each projects as project, i}
 					<Project
@@ -119,8 +122,7 @@
 						github={project.github}
 						link={project.link}
 						image={project.image}
-						reverse={i % 2 !== 0}
-						/>
+						reverse={i % 2 !== 0} />
 				{/each}
 			</div>
 		</div>
@@ -140,7 +142,8 @@
 						</div>
 						<div>
 							<h3 class="font-medium">Email</h3>
-							<a class="leading-relaxed" href="mailto:dev.mrinmoy.haloi@gmail.com">dev.mrinmoy.haloi@gmail.com</a>
+							<a class="leading-relaxed" href="mailto:dev.mrinmoy.haloi@gmail.com"
+								>dev.mrinmoy.haloi@gmail.com</a>
 						</div>
 					</div>
 
@@ -267,6 +270,7 @@
 				margin-inline: auto;
 				span.name {
 					font-size: 1rem;
+					font-weight: 500;
 					border: 1px solid hsl(0, 0%, 64%);
 					width: fit-content;
 					padding: 0.3rem 0.7rem;
@@ -285,9 +289,6 @@
 
 			.bottom-box {
 				display: flex;
-				// justify-content: space-between;
-				// font-size: 1.3rem;
-				// font-weight: 500;
 				.arrow-down {
 					font-size: 2.2rem;
 					color: hsl(0, 0%, 100%);
@@ -389,15 +390,15 @@
 			z-index: -1;
 		}
 		.projects {
-			margin-top: 5rem;
+			margin-block: 5rem;
 			display: grid;
-			gap: 5rem;
+			gap: 7rem;
 		}
 	}
 	.contact-section {
 		min-height: 100vh;
 		position: relative;
-		padding-top: 5rem;
+		// padding-top: 5rem;
 		&::before {
 			content: '';
 			position: absolute;

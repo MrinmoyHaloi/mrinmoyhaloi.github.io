@@ -7,7 +7,7 @@
 <div class="skills mx-auto sm:w-10/12 lg:w-full">
 	<h2>Skills</h2>
 	<h3>Languages and Frameworks</h3>
-	<ul>
+	<ul class="mb-8">
 		{#each languages as lang}
 			<li>
 				<Icon icon={lang.icon} />
