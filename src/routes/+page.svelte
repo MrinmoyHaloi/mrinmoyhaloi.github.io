@@ -162,7 +162,7 @@
 								<Icon icon="uil:github" width="24" height="24" />
 							</a>
 							<a
-								href="https://linkedin.com/mrinmoy-haloi"
+								href="https://linkedin.com/in/mrinmoy-haloi"
 								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
 								<Icon icon="uil:linkedin" width="24" height="24" />
 							</a>
