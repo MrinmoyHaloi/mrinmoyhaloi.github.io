@@ -57,6 +57,7 @@
 
 <main class="relative">
 	<section class="landing-section">
+		<div class="dot-grid"></div>
 		<div class="section">
 			<div class="title-box">
 				<span class="name">Mrinmoy Haloi</span>
@@ -92,7 +93,7 @@
 					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.7rem]">
 						I specialize in creating user-friendly and performant interfaces with Svelte.
 					</p>
-					<div class="w-24 mt-5">
+					<div class="mt-5 w-24">
 						<div
 							class="css-awsm flex w-14 flex-col
 						border-2 border-white p-1 font-medium">
@@ -234,6 +235,27 @@
 	.landing-section {
 		height: 100vh;
 		position: relative;
+		.dot-grid {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: radial-gradient(rgb(107, 107, 107) 1px, transparent 1px);
+			background-size: 40px 40px;
+			z-index: -1;
+			mask-image: linear-gradient(to top, transparent 0%, black 15%);
+			animation: dot-grid 2s linear infinite;
+		}
+
+		@keyframes dot-grid {
+			0% {
+				background-position: 0 0;
+			}
+			100% {
+				background-position: 0 40px;
+			}
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -275,6 +297,7 @@
 					width: fit-content;
 					padding: 0.3rem 0.7rem;
 					border-radius: 10rem;
+					backdrop-filter: blur(5px);
 				}
 				h1 {
 					font-weight: 400;
