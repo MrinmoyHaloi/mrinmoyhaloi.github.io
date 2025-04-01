@@ -233,7 +233,7 @@
 
 <style lang="scss">
 	.landing-section {
-		height: 100vh;
+		height: 100dvh;
 		position: relative;
 		.dot-grid {
 			position: absolute;
