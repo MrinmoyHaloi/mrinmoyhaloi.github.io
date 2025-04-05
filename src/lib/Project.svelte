@@ -51,7 +51,6 @@
 				transition: all 0.3s;
 				padding: 0.8rem;
 				padding-top: 2rem;
-				opacity: 0;
 				width: 100%;
 				background: linear-gradient(0deg, rgb(0, 115, 115) 0%, rgba(0, 230, 230, 0) 100%);
 				ul {
@@ -87,9 +86,6 @@
 				}
 			}
 			&:hover {
-				.skills {
-					opacity: 1;
-				}
 				img {
 					transform: scale(1.04);
 				}
