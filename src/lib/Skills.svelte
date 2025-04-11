@@ -9,7 +9,7 @@
 	<h3>Languages and Frameworks</h3>
 	<ul class="mb-8">
 		{#each languages as lang}
-			<li>
+			<li class="skill">
 				<Icon icon={lang.icon} />
 				{lang.name}
 			</li>
@@ -87,7 +87,7 @@
 				color: black;
 				background-color: white;
 				border-radius: 50rem;
-				transition: all 0.3s;
+				transition: background-color 0.3s;
 				cursor: pointer;
 				@media screen and (width < 768px) {
 					font-size: 0.9rem;

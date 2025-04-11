@@ -115,7 +115,7 @@
 					padding: 0.3rem 0.7rem;
 					border-radius: 0.3rem;
 					font-weight: 500;
-					transition: all 0.3s;
+					transition: background-color 0.3s;
 					&.demo-btn {
 						background-color: whitesmoke;
 						color: black;

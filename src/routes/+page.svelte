@@ -3,6 +3,8 @@
 	import Skills from '$lib/Skills.svelte';
 	import Project from '$lib/Project.svelte';
 	import Button from '$lib/Button.svelte';
+	import { onMount } from 'svelte';
+	import { animate, hover, inView, stagger, type AnimationSequence } from 'motion';
 
 	let languages = [
 		{ name: 'HTML', icon: 'skill-icons:html' },
@@ -53,6 +55,35 @@
 			image: 'focuswave.png'
 		}
 	];
+
+	onMount(() => {
+		let sequence: AnimationSequence = [
+			['.slide-up', { opacity: [0, 1] }, { duration: 1, delay: stagger(0.3) }],
+			['.slide-up', { y: [30, 0] }, { duration: 1, ease: 'circOut', delay: stagger(0.2), at: 0.1 }],
+			['.btn-slide-up', { opacity: [0, 1] }, { duration: 0.8, delay: stagger(0.2), at: 0.5 }],
+			['.btn-slide-up', { y: [30, 0] }, { duration: 0.5, delay: stagger(0.2), at: 0.5 }]
+		];
+
+		animate(sequence);
+
+		hover('.btn-hover', (element) => {
+			animate(element, { scale: 1.1, rotate: -5 }, { type: 'spring', bounce: 0.7 });
+			return () =>
+				animate(element, { scale: 1, rotate: 0 }, { type: 'spring', bounce: 0.4, duration: 0.4 });
+		});
+
+		inView(
+			'h2, input, textarea',
+			(element) => {
+				animate(
+					element,
+					{ opacity: [0, 1], y: [20, 0] },
+					{ duration: 1, type: 'spring', bounce: 0.4 }
+				);
+			},
+			{ margin: '0px 0px -20% 0px' }
+		);
+	});
 </script>
 
 <main class="relative">
@@ -60,18 +91,23 @@
 		<div class="dot-grid"></div>
 		<div class="section">
 			<div class="title-box">
-				<span class="name">Mrinmoy Haloi</span>
+				<span class="name opacity-0">Mrinmoy Haloi</span>
 				<h1 class="text-[4rem] leading-snug sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
-					<span>Front-End dev.</span>
+					<span class="slide-up inline-block opacity-0">Front-End dev.</span>
 					<br />
-					<span style="margin-right: 2rem;">Based in</span>
-					<span class="address text-[2rem] md:text-[2.3rem] lg:text-[2.5rem]">Assam, India</span>
-					<div class="links flex gap-6 py-6 *:transition-all">
+					<span style="margin-right: 2rem;" class="slide-up inline-block opacity-0">Based in</span>
+					<span
+						class="address slide-up inline-block text-[2rem] opacity-0 md:text-[2.3rem] lg:text-[2.5rem]"
+						>Assam, India</span>
+					<div class="links flex gap-6 py-6">
 						<Button
 							href="#projects"
 							text="View My Work"
-							className="bg-slate-50 text-black hover:bg-zinc-300" />
-						<Button href="#contact" text="Contact Me" className="bg-zinc-900 hover:bg-zinc-800" />
+							className="bg-slate-50 text-black hover:bg-zinc-300 btn-hover btn-slide-up opacity-0" />
+						<Button
+							href="#contact"
+							text="Contact Me"
+							className="bg-zinc-900 hover:bg-zinc-800 btn-hover btn-slide-up opacity-0" />
 					</div>
 				</h1>
 			</div>
@@ -441,6 +477,10 @@
 			height: 100vh;
 			background: radial-gradient(circle at 0% 110%, rgba(0, 230, 230, 0.545) 0%, transparent 40%);
 			z-index: -1;
+		}
+		input,
+		textarea {
+			opacity: 0;
 		}
 	}
 </style>
