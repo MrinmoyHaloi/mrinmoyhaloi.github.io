@@ -481,6 +481,7 @@
 		input,
 		textarea {
 			opacity: 0;
+			background-color: transparent;
 		}
 	}
 </style>
