@@ -58,10 +58,10 @@
 
 	onMount(() => {
 		let sequence: AnimationSequence = [
-			['.slide-up', { opacity: [0, 1] }, { duration: 1, delay: stagger(0.3) }],
-			['.slide-up', { y: [30, 0] }, { duration: 1, ease: 'circOut', delay: stagger(0.2), at: 0.1 }],
-			['.btn-slide-up', { opacity: [0, 1] }, { duration: 0.8, delay: stagger(0.2), at: 0.5 }],
-			['.btn-slide-up', { y: [30, 0] }, { duration: 0.5, delay: stagger(0.2), at: 0.5 }]
+			['.slide-up', { opacity: [0, 1] }, { duration: 1, delay: stagger(0.3), at: 0.2 }],
+			['.slide-up', { y: [30, 0] }, { duration: 1, ease: 'circOut', delay: stagger(0.2), at: 0.3 }],
+			['.btn-slide-up', { opacity: [0, 1] }, { duration: 0.8, delay: stagger(0.2), at: 0.6 }],
+			['.btn-slide-up', { y: [30, 0] }, { duration: 0.5, delay: stagger(0.2), at: 0.6 }]
 		];
 
 		animate(sequence);
