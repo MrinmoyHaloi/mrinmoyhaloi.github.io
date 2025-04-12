@@ -112,7 +112,7 @@
 				</h1>
 			</div>
 			<div class="bottom-box pb-6">
-				<a href="#about" class="arrow-down ms-auto"
+				<a href="#about" class="arrow-down ms-auto" aria-label="scroll down"
 					><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a>
 			</div>
 		</div>
@@ -198,17 +198,17 @@
 						<div class="flex gap-4">
 							<a
 								href="https://github.com/mrinmoyhaloi"
-								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700" aria-label="GitHub profile">
 								<Icon icon="uil:github" width="24" height="24" />
 							</a>
 							<a
 								href="https://linkedin.com/in/mrinmoy-haloi"
-								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700" aria-label="linkedin profile">
 								<Icon icon="uil:linkedin" width="24" height="24" />
 							</a>
 							<a
 								href="https://x.com/_mrinmoy_haloi_"
-								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700">
+								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700" aria-label="x(twitter) profile">
 								<Icon icon="uil:twitter" width="24" height="24" />
 							</a>
 						</div>

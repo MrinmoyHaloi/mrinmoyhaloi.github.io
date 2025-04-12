@@ -19,15 +19,13 @@
 	<ul>
 		{#each tools as tool}
 			{#if tool.name === 'Linux'}
-				<div class="popover">
-					<li>
+					<li class="popover">
 						<Icon icon={tool.icon} />
 						{tool.name}
+						<div class="popover-content">
+							<p>I use Fedora BTW!</p>
+						</div>
 					</li>
-					<div class="popover-content">
-						<p>I use Fedora BTW!</p>
-					</div>
-				</div>
 			{:else}
 				<li>
 					<Icon icon={tool.icon} />
