@@ -87,6 +87,7 @@
 				border-radius: 50rem;
 				transition: background-color 0.3s;
 				cursor: pointer;
+				opacity: 0;
 				@media screen and (width < 768px) {
 					font-size: 0.9rem;
 					padding: 0.1rem 0.5rem;
