@@ -88,7 +88,7 @@
 			'.about-section .skills',
 			(element) => {
 				animate(
-					".skills ul li",
+					".about-section .skills ul li",
 					{ opacity: [0, 1], y: [20, 0] },
 					{ duration: 1.5, type: 'spring', bounce: 0.4, delay: stagger(0.1) }
 				);
