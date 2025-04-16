@@ -88,7 +88,7 @@
 			'.about-section .skills',
 			(element) => {
 				animate(
-					".about-section .skills ul li",
+					'.about-section .skills ul li',
 					{ opacity: [0, 1], y: [20, 0] },
 					{ duration: 1.5, type: 'spring', bounce: 0.4, delay: stagger(0.1) }
 				);
@@ -272,7 +272,7 @@
 						</div>
 						<button
 							type="submit"
-							class="flex w-fit items-center gap-2 rounded-md bg-slate-50 px-4 py-2 font-medium text-black hover:bg-zinc-300"
+							class="btn-hover flex w-fit items-center gap-2 rounded-md bg-slate-50 px-4 py-2 font-medium text-black hover:bg-zinc-300"
 							>Send message <Icon icon="lucide:send" />
 						</button>
 					</form>
