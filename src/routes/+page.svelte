@@ -95,6 +95,18 @@
 			},
 			{ margin: '0px 0px -20% 0px' }
 		);
+
+		inView(
+			'.project',
+			(element) => {
+				animate(
+					element,
+					{ opacity: [0, 1], y: [20, 0] },
+					{ duration: 1.5, type: 'spring', bounce: 0.4, delay: stagger(0.1) }
+				);
+			},
+			{ margin: '0px 0px -20% 0px' }
+		);
 	});
 </script>
 

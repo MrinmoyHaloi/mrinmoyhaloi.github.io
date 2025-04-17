@@ -25,13 +25,15 @@
 		</div>
 		<div class="links">
 			<a href={github} class="btn project-btn" target="_blank"><Icon icon="lucide:github" />Code</a>
-			<a href={link} class="btn demo-btn" target="_blank"><Icon icon="lucide:external-link" />Live Demo</a>
+			<a href={link} class="btn demo-btn" target="_blank"
+				><Icon icon="lucide:external-link" />Live Demo</a>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
 	.project {
+		opacity: 0;
 		.project-image {
 			position: relative;
 			transition: all 0.3s;
