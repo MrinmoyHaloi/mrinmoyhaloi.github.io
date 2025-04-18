@@ -198,13 +198,15 @@
 			<div class="mt-16 flex gap-6 max-md:flex-col">
 				<div class="flex w-full flex-col gap-4">
 					<div class="flex items-center gap-6">
-						<div class="rounded-full bg-zinc-800 p-3">
-							<Icon icon="lucide:mail" width="24" height="24" />
-						</div>
+						<a href="mailto:dev.mrinmoy.haloi@gmail.com">
+							<div class="rounded-full bg-zinc-800 p-3">
+								<Icon icon="lucide:mail" width="24" height="24" />
+							</div>
+						</a>
 						<div>
 							<h3 class="font-medium">Email</h3>
-							<a class="leading-relaxed" href="mailto:dev.mrinmoy.haloi@gmail.com"
-								>dev.mrinmoy.haloi@gmail.com</a>
+							<p class="leading-relaxed"
+								>dev.mrinmoy.haloi@gmail.com</p>
 						</div>
 					</div>
 
