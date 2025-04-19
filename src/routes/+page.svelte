@@ -511,6 +511,10 @@
 		textarea {
 			opacity: 0;
 			background-color: transparent;
+			transition: background-color 0.1s;
+			&:hover, &:focus {
+				background-color: rgba(0, 230, 230, 0.1);
+			}
 		}
 	}
 </style>
