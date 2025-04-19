@@ -205,8 +205,7 @@
 						</a>
 						<div>
 							<h3 class="font-medium">Email</h3>
-							<p class="leading-relaxed"
-								>dev.mrinmoy.haloi@gmail.com</p>
+							<p class="leading-relaxed">dev.mrinmoy.haloi@gmail.com</p>
 						</div>
 					</div>
 
@@ -486,7 +485,6 @@
 	.contact-section {
 		min-height: 100vh;
 		position: relative;
-		// padding-top: 5rem;
 		&::before {
 			content: '';
 			position: absolute;
@@ -512,7 +510,8 @@
 			opacity: 0;
 			background-color: transparent;
 			transition: background-color 0.1s;
-			&:hover, &:focus {
+			&:hover,
+			&:focus {
 				background-color: rgba(0, 230, 230, 0.1);
 			}
 		}
