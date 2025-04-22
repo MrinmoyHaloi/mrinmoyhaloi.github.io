@@ -9,7 +9,7 @@
 	<h3>Languages and Frameworks</h3>
 	<ul class="mb-8">
 		{#each languages as lang}
-			<li class="skill">
+			<li class="skill pill-hover">
 				<Icon icon={lang.icon} />
 				{lang.name}
 			</li>
@@ -19,7 +19,7 @@
 	<ul>
 		{#each tools as tool}
 			{#if tool.name === 'Linux'}
-					<li class="popover">
+					<li class="popover pill-hover">
 						<Icon icon={tool.icon} />
 						{tool.name}
 						<div class="popover-content">
@@ -27,7 +27,7 @@
 						</div>
 					</li>
 			{:else}
-				<li>
+				<li class="pill-hover">
 					<Icon icon={tool.icon} />
 					{tool.name}
 				</li>

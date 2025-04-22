@@ -10,8 +10,8 @@
 		<div class="skills">
 			<ul>
 				{#each skills as skill}
-					<li>
-						<Icon icon={skill.icon} />
+					<li class="pill-hover">
+						<Icon icon={skill.icon}/>
 						{skill.name}
 					</li>
 				{/each}
@@ -70,7 +70,7 @@
 						background-color: rgb(27, 27, 27);
 						border-radius: 50rem;
 						outline: 1px solid hsl(0, 0%, 24%);
-						transition: all 0.3s;
+						transition: background-color 0.3s;
 						font-size: 0.9rem;
 						cursor: pointer;
 						@media screen and (width < 768px) {

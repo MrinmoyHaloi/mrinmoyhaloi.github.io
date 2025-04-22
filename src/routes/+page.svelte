@@ -72,6 +72,12 @@
 				animate(element, { scale: 1, rotate: 0 }, { type: 'spring', bounce: 0.4, duration: 0.4 });
 		});
 
+		hover('.pill-hover', (element) => {
+			animate(element, { scale: 1.1 }, { type: 'spring', bounce: 0.7 });
+			return () =>
+				animate(element, { scale: 1 }, { type: 'spring', bounce: 0.7 });
+		});
+
 		inView(
 			'h2, input, textarea',
 			(element) => {
