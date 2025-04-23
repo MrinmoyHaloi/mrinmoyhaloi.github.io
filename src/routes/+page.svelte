@@ -74,8 +74,7 @@
 
 		hover('.pill-hover', (element) => {
 			animate(element, { scale: 1.1 }, { type: 'spring', bounce: 0.7 });
-			return () =>
-				animate(element, { scale: 1 }, { type: 'spring', bounce: 0.7 });
+			return () => animate(element, { scale: 1 }, { type: 'spring', bounce: 0.7 });
 		});
 
 		inView(
@@ -152,11 +151,11 @@
 			<div class="m-auto flex flex-col gap-16 *:flex-1 lg:flex-row">
 				<div class="about-text mx-auto sm:w-10/12 lg:w-full">
 					<h2>Myself,</h2>
-					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.7rem]">
+					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.5rem]">
 						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
 						with 4 years of programming experience.
 					</p>
-					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.7rem]">
+					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.5rem]">
 						I specialize in creating user-friendly and performant interfaces with Svelte.
 					</p>
 					<div class="mt-5 w-24">
