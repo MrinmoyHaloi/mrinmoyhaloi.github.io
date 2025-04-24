@@ -83,7 +83,7 @@
 				padding: 0.2rem 0.7rem;
 				font-weight: 500;
 				color: black;
-				background-color: white;
+				background-color: rgb(236, 236, 236);
 				border-radius: 50rem;
 				transition: background-color 0.3s;
 				cursor: pointer;
