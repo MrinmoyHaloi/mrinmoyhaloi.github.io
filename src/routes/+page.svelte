@@ -175,7 +175,7 @@
 	<section class="projects-section" id="projects">
 		<div class="section">
 			<h2>Projects</h2>
-			<p class="text-lg">
+			<p class="text-lg text-zinc-300">
 				Here are some of my recent projects that showcase my skills and expertise in web
 				development.
 			</p>
