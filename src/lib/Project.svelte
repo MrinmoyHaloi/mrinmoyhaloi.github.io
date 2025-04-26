@@ -45,7 +45,7 @@
 				object-fit: cover;
 				height: 100%;
 				object-position: left;
-				transition: all 0.5s;
+				transition: all 0.3s;
 			}
 			.skills {
 				position: absolute;
