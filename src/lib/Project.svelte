@@ -99,7 +99,7 @@
 			align-content: center;
 			gap: 1rem;
 			h3 {
-				font-size: 1.7rem;
+				font-size: 2.5rem;
 				font-weight: 700;
 			}
 			p {
