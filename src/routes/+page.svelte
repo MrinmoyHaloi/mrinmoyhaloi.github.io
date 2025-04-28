@@ -515,6 +515,7 @@
 			opacity: 0;
 			background-color: transparent;
 			transition: background-color 0.1s;
+			box-shadow: 0 0 40px 0 hsl(180, 100%, 10%);
 			&:hover,
 			&:focus {
 				background-color: rgba(0, 230, 230, 0.1);
