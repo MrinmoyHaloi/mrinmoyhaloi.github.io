@@ -196,7 +196,7 @@
 	<section class="contact-section" id="contact">
 		<div class="section">
 			<h2>Get In Touch</h2>
-			<p class="text-lg">
+			<p class="text-lg text-zinc-300">
 				Have a project in mind or want to discuss a potential collaboration? Feel free to reach out
 				to me.
 			</p>
