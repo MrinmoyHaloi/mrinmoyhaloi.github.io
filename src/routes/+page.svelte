@@ -27,7 +27,7 @@
 	];
 	let projects = [
 		{
-			name: 'Swirl Language Website',
+			name: 'Swirl Programming Language',
 			description:
 				'Website for the Swirl programming language, featuring downloads for respective platforms based on the latest GitHub release.',
 			skills: [
