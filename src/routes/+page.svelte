@@ -29,7 +29,7 @@
 		{
 			name: 'Swirl Programming Language',
 			description:
-				'Website for the Swirl programming language, featuring downloads for respective platforms based on the latest GitHub release.',
+				'Website for the Swirl programming language, featuring downloads for respective platforms binaries fetched from the latest GitHub release.',
 			skills: [
 				{ name: 'Svelte', icon: 'skill-icons:svelte' },
 				{ name: 'SCSS', icon: 'skill-icons:sass' },
