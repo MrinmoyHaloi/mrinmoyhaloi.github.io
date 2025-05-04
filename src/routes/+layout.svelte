@@ -17,7 +17,6 @@ footer {
 	outline: 1px solid #155e75;
 	p {
 		width: fit-content;
-		font-size: 1rem;
 		font-weight: 500;
 		padding: 0;
 		cursor: default;
