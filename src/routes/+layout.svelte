@@ -19,7 +19,6 @@ footer {
 		width: fit-content;
 		font-weight: 500;
 		padding: 0;
-		cursor: default;
 	}
 }
 </style>
