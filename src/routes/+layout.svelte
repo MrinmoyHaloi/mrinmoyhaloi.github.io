@@ -6,7 +6,7 @@
 {@render children()}
 
 <footer>
-	<p class="p-4 text-center">Crafted by <b>Mrinmoy Haloi</b> 2025</p>
+	<p class="p-4 text-center">Crafted by <b class="text-white">Mrinmoy Haloi</b> 2025</p>
 </footer>
 
 <style lang="scss">
@@ -19,6 +19,7 @@ footer {
 		width: fit-content;
 		font-weight: 500;
 		padding: 0;
+		color: #d5d5d5
 	}
 }
 </style>
