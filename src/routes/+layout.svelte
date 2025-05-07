@@ -15,6 +15,7 @@ footer {
 	place-items: center;
 	padding: 1rem;
 	outline: 1px solid #155e75;
+	background: linear-gradient(to bottom, #0b111f, #08262f);
 	p {
 		width: fit-content;
 		font-weight: 500;
