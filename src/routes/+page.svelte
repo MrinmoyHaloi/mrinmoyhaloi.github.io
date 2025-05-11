@@ -120,7 +120,7 @@
 		<div class="dot-grid"></div>
 		<div class="section">
 			<div class="title-box">
-				<span class="name opacity-0">Mrinmoy Haloi</span>
+				<span class="name opacity-0 slide-up">Mrinmoy Haloi</span>
 				<h1 class="text-[4rem] leading-snug sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
 					<span class="slide-up inline-block opacity-0">Front-End dev.</span>
 					<br />
