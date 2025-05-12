@@ -135,7 +135,7 @@
 							className="bg-zinc-300 text-black hover:bg-zinc-400 btn-hover btn-slide-up opacity-0" />
 						<Button
 							href="#contact"
-							text="Contact Me"
+							text="Get In Touch"
 							className="bg-zinc-900 hover:bg-zinc-800 btn-hover btn-slide-up opacity-0" />
 					</div>
 				</h1>
