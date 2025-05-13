@@ -116,7 +116,7 @@
 </script>
 
 <main class="relative">
-	<section class="landing-section">
+	<section class="landing-section" id="home">
 		<div class="dot-grid"></div>
 		<div class="section">
 			<div class="title-box">
