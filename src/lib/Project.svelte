@@ -100,11 +100,11 @@
 			gap: 1rem;
 			h3 {
 				font-size: 2.5rem;
+				font-weight: 700;
 				@media screen and (width < 768px) {
 					font-size: 2rem;	
 					
 				}
-				font-weight: 700;
 			}
 			p {
 				font-size: 1.1rem;
