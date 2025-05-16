@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.scss';
-	import Icon from '@iconify/svelte';
+	import 'iconify-icon';
 	let { children } = $props();
 </script>
 
@@ -9,7 +9,7 @@
 <footer>
 	<p class="p-4 text-center">Crafted by <b class="text-white">Mrinmoy Haloi</b> 2025</p>
 	<a href="#home" class="text-white hover:text-blue-500"
-		>Back to top <Icon icon="fa6-solid:arrow-up" /></a>
+		>Back to top <iconify-icon icon="fa6-solid:arrow-up"></iconify-icon> </a>
 </footer>
 
 <style lang="scss">

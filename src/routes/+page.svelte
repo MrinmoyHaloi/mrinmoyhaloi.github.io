@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import 'iconify-icon';
 	import Skills from '$lib/Skills.svelte';
 	import Project from '$lib/Project.svelte';
 	import Button from '$lib/Button.svelte';
@@ -120,7 +120,7 @@
 		<div class="dot-grid"></div>
 		<div class="section">
 			<div class="title-box">
-				<span class="name opacity-0 slide-up">Mrinmoy Haloi</span>
+				<span class="name slide-up opacity-0">Mrinmoy Haloi</span>
 				<h1 class="text-[4rem] leading-snug sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
 					<span class="slide-up inline-block opacity-0">Front-End dev.</span>
 					<br />
@@ -142,7 +142,7 @@
 			</div>
 			<div class="bottom-box pb-6">
 				<a href="#about" class="arrow-down ms-auto" aria-label="scroll down"
-					><Icon icon="fa6-solid:arrow-down" width="28" height="28" /></a>
+					><iconify-icon icon="fa6-solid:arrow-down" width="28" height="28"></iconify-icon></a>
 			</div>
 		</div>
 	</section>
@@ -203,9 +203,9 @@
 			<div class="mt-16 flex gap-6 max-md:flex-col">
 				<div class="flex w-full flex-col gap-4">
 					<div class="flex items-center gap-6">
-						<a href="mailto:dev.mrinmoy.haloi@gmail.com">
-							<div class="rounded-full bg-zinc-800 p-3">
-								<Icon icon="lucide:mail" width="24" height="24" />
+						<a href="mailto:dev.mrinmoy.haloi@gmail.com" aria-label="Email">
+							<div class="rounded-full bg-zinc-800 p-3 flex">
+								<iconify-icon icon="lucide:mail" width=24 height=24></iconify-icon>
 							</div>
 						</a>
 						<div>
@@ -215,8 +215,8 @@
 					</div>
 
 					<div class="flex items-center gap-6">
-						<div class="rounded-full bg-zinc-800 p-3">
-							<Icon icon="lucide:map-pin" width="24" height="24" />
+						<div class="rounded-full bg-zinc-800 p-3 flex">
+							<iconify-icon icon="lucide:map-pin" width="24" height="24"></iconify-icon>
 						</div>
 						<div>
 							<h3 class="font-medium">Location</h3>
@@ -228,21 +228,21 @@
 						<div class="flex gap-4">
 							<a
 								href="https://github.com/mrinmoyhaloi"
-								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
+								class="rounded-full bg-zinc-800 p-3 flex hover:bg-zinc-700"
 								aria-label="GitHub profile">
-								<Icon icon="uil:github" width="24" height="24" />
+								<iconify-icon icon="uil:github" width="24" height="24"></iconify-icon>
 							</a>
 							<a
 								href="https://linkedin.com/in/mrinmoy-haloi"
-								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
+								class="rounded-full bg-zinc-800 p-3 flex hover:bg-zinc-700"
 								aria-label="linkedin profile">
-								<Icon icon="uil:linkedin" width="24" height="24" />
+								<iconify-icon icon="uil:linkedin" width="24" height="24"></iconify-icon>
 							</a>
 							<a
 								href="https://x.com/_mrinmoy_haloi_"
-								class="rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
+								class="rounded-full bg-zinc-800 p-3 flex hover:bg-zinc-700"
 								aria-label="x(twitter) profile">
-								<Icon icon="uil:twitter" width="24" height="24" />
+								<iconify-icon icon="uil:twitter" width="24" height="24"></iconify-icon>
 							</a>
 						</div>
 					</div>
@@ -291,7 +291,7 @@
 						<button
 							type="submit"
 							class="btn-hover flex w-fit items-center gap-2 rounded-md bg-slate-50 px-4 py-2 font-medium text-black hover:bg-zinc-300"
-							>Send message <Icon icon="lucide:send" />
+							>Send message <iconify-icon icon="lucide:send"></iconify-icon>
 						</button>
 					</form>
 				</div>

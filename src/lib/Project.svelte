@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import 'iconify-icon';
 
 	let { name, description, skills, github, link, image, reverse } = $props();
 </script>
@@ -11,7 +11,7 @@
 			<ul>
 				{#each skills as skill}
 					<li class="pill-hover">
-						<Icon icon={skill.icon}/>
+						<iconify-icon icon={skill.icon}></iconify-icon>
 						{skill.name}
 					</li>
 				{/each}
@@ -24,9 +24,10 @@
 			<p class="text-zinc-300">{description}</p>
 		</div>
 		<div class="links">
-			<a href={github} class="btn project-btn" target="_blank"><Icon icon="lucide:github" />Code</a>
+			<a href={github} class="btn project-btn" target="_blank">
+				<iconify-icon icon="lucide:github"></iconify-icon>Code</a>
 			<a href={link} class="btn demo-btn" target="_blank"
-				><Icon icon="lucide:external-link" />Live Demo</a>
+				><iconify-icon icon="lucide:external-link"></iconify-icon>Live Demo</a>
 		</div>
 	</div>
 </div>
@@ -102,8 +103,7 @@
 				font-size: 2.5rem;
 				font-weight: 700;
 				@media screen and (width < 768px) {
-					font-size: 2rem;	
-					
+					font-size: 2rem;
 				}
 			}
 			p {

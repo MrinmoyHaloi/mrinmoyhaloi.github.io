@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	
+	import 'iconify-icon';
+
 	let { languages, tools } = $props();
 </script>
 
@@ -10,7 +11,7 @@
 	<ul class="mb-8">
 		{#each languages as lang}
 			<li class="skill pill-hover">
-				<Icon icon={lang.icon} />
+				<iconify-icon icon={lang.icon} width="1.2em" height="1.2em"></iconify-icon>
 				{lang.name}
 			</li>
 		{/each}
@@ -19,16 +20,16 @@
 	<ul>
 		{#each tools as tool}
 			{#if tool.name === 'Linux'}
-					<li class="popover pill-hover">
-						<Icon icon={tool.icon} />
-						{tool.name}
-						<div class="popover-content">
-							<p>I use Fedora BTW!</p>
-						</div>
-					</li>
+				<li class="popover pill-hover">
+					<iconify-icon icon={tool.icon} width="1.2em" height="1.2em"></iconify-icon>
+					{tool.name}
+					<div class="popover-content">
+						<p>I use Fedora BTW!</p>
+					</div>
+				</li>
 			{:else}
 				<li class="pill-hover">
-					<Icon icon={tool.icon} />
+					<iconify-icon icon={tool.icon} width="1.2em" height="1.2em"></iconify-icon>
 					{tool.name}
 				</li>
 			{/if}
