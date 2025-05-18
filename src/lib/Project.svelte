@@ -45,6 +45,7 @@
 				aspect-ratio: 16/9;
 				object-fit: cover;
 				height: 100%;
+				width: 100%;
 				object-position: left;
 				transition: all 0.3s;
 			}
