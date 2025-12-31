@@ -7,7 +7,7 @@
 {@render children()}
 
 <footer>
-	<p class="p-4 text-center">Crafted by <b class="text-white">Mrinmoy Haloi</b> 2025</p>
+	<p class="p-4 text-center">Crafted by <b class="text-white">Mrinmoy Haloi</b> 2026</p>
 	<a href="#home" class="text-white hover:text-blue-500"
 		>Back to top <iconify-icon icon="fa6-solid:arrow-up"></iconify-icon> </a>
 </footer>
