@@ -24,10 +24,10 @@
 			<p class="text-zinc-300">{description}</p>
 		</div>
 		<div class="links">
-			<a href={github} class="btn project-btn" target="_blank">
-				<iconify-icon icon="lucide:github"></iconify-icon>Code</a>
 			<a href={link} class="btn demo-btn" target="_blank"
 				><iconify-icon icon="lucide:external-link"></iconify-icon>Live Demo</a>
+			<a href={github} class="btn project-btn" target="_blank">
+				<iconify-icon icon="lucide:github"></iconify-icon>Code</a>
 		</div>
 	</div>
 </div>
