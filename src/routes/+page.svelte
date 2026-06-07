@@ -484,6 +484,9 @@
 			margin-block: 5rem;
 			display: grid;
 			gap: 7rem;
+			@media screen and (width < 768px) {
+				gap: 4rem;
+			}
 		}
 	}
 	.contact-section {
