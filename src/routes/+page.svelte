@@ -352,6 +352,7 @@
 			display: flex;
 			flex-direction: column;
 			width: 85%;
+			padding-block: 2rem;
 			.title-box {
 				height: 100%;
 				display: flex;
