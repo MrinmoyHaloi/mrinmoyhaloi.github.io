@@ -235,13 +235,13 @@
 								href="https://linkedin.com/in/mrinmoy-haloi"
 								class="flex rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
 								aria-label="linkedin profile">
-								<iconify-icon icon="uil:linkedin" width="24" height="24"></iconify-icon>
+								<iconify-icon icon="devicon:linkedin" width="24" height="24"></iconify-icon>
 							</a>
 							<a
 								href="https://x.com/_mrinmoy_haloi_"
-								class="flex rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
+								class="flex rounded-full bg-zinc-800 fill-white p-3 hover:bg-zinc-700"
 								aria-label="x(twitter) profile">
-								<iconify-icon icon="uil:twitter" width="24" height="24"></iconify-icon>
+								<iconify-icon icon="devicon:twitter" width="24" height="24"></iconify-icon>
 							</a>
 						</div>
 					</div>
