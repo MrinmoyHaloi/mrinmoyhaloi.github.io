@@ -55,6 +55,9 @@ p {
 	@media screen and (width < 1024px) {
 		width: 85%;
 	}
+	@media screen and (width < 768px) {
+		padding-block: 4rem;
+	}
 }
 
 /* Custom Scrollbar Styles */
