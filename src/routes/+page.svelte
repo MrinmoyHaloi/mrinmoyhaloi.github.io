@@ -131,7 +131,7 @@
 						<Button
 							href="#projects"
 							text="View My Work"
-							className="bg-zinc-300 text-black hover:bg-zinc-400 btn-hover btn-slide-up opacity-0" />
+							className="bg-slate-50 text-black hover:bg-zinc-400 btn-hover btn-slide-up opacity-0" />
 						<Button
 							href="#contact"
 							text="Get In Touch"
