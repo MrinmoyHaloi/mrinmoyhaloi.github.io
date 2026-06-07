@@ -20,7 +20,6 @@
 		{ name: 'Git', icon: 'skill-icons:git' },
 		{ name: 'GitHub', icon: 'skill-icons:github-dark' },
 		{ name: 'Linux', icon: 'skill-icons:linux-dark', popover: 'I use Fedora BTW!' },
-		{ name: 'VSCode', icon: 'skill-icons:vscode-dark' },
 		{ name: 'NPM', icon: 'skill-icons:npm-dark' },
 		{ name: 'Bun', icon: 'skill-icons:bun-dark' },
 		{ name: 'Vite', icon: 'skill-icons:vite-dark' }
