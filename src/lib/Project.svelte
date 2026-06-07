@@ -4,7 +4,7 @@
 	let { name, description, skills, github, link, image, reverse } = $props();
 </script>
 
-<div class="project flex flex-col gap-10 lg:flex-row {reverse ? 'lg:flex-row-reverse' : ''}">
+<div class="project flex flex-col gap-4 md:gap-10 lg:flex-row {reverse ? 'lg:flex-row-reverse' : ''}">
 	<div class="project-image flex-[0.6]">
 		<img src={image} alt="" class="" />
 		<div class="skills">
