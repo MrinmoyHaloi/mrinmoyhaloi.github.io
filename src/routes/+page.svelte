@@ -202,19 +202,19 @@
 			<div class="mt-16 flex gap-6 max-md:flex-col">
 				<div class="flex w-full flex-col gap-4">
 					<div class="flex items-center gap-6">
-						<a href="mailto:dev.mrinmoy.haloi@gmail.com" aria-label="Email">
-							<div class="rounded-full bg-zinc-800 p-3 flex">
-								<iconify-icon icon="lucide:mail" width=24 height=24></iconify-icon>
-							</div>
-						</a>
+						<div class="flex rounded-full bg-zinc-800 p-3">
+							<iconify-icon icon="lucide:mail" width="24" height="24"></iconify-icon>
+						</div>
 						<div>
 							<h3 class="font-medium">Email</h3>
-							<p class="leading-relaxed">dev.mrinmoy.haloi@gmail.com</p>
+							<a href="mailto:dev.mrinmoy.haloi@gmail.com" aria-label="Email">
+								<p class="leading-relaxed">dev.mrinmoy.haloi@gmail.com</p>
+							</a>
 						</div>
 					</div>
 
 					<div class="flex items-center gap-6">
-						<div class="rounded-full bg-zinc-800 p-3 flex">
+						<div class="flex rounded-full bg-zinc-800 p-3">
 							<iconify-icon icon="lucide:map-pin" width="24" height="24"></iconify-icon>
 						</div>
 						<div>
@@ -227,19 +227,19 @@
 						<div class="flex gap-4">
 							<a
 								href="https://github.com/mrinmoyhaloi"
-								class="rounded-full bg-zinc-800 p-3 flex hover:bg-zinc-700"
+								class="flex rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
 								aria-label="GitHub profile">
 								<iconify-icon icon="uil:github" width="24" height="24"></iconify-icon>
 							</a>
 							<a
 								href="https://linkedin.com/in/mrinmoy-haloi"
-								class="rounded-full bg-zinc-800 p-3 flex hover:bg-zinc-700"
+								class="flex rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
 								aria-label="linkedin profile">
 								<iconify-icon icon="uil:linkedin" width="24" height="24"></iconify-icon>
 							</a>
 							<a
 								href="https://x.com/_mrinmoy_haloi_"
-								class="rounded-full bg-zinc-800 p-3 flex hover:bg-zinc-700"
+								class="flex rounded-full bg-zinc-800 p-3 hover:bg-zinc-700"
 								aria-label="x(twitter) profile">
 								<iconify-icon icon="uil:twitter" width="24" height="24"></iconify-icon>
 							</a>
