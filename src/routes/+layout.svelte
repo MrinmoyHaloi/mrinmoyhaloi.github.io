@@ -4,6 +4,10 @@
 	let { children } = $props();
 </script>
 
+<nav>
+	<h1 class="logo">Mrinmoy Haloi</h1>
+</nav>
+
 {@render children()}
 
 <footer>
@@ -14,6 +18,24 @@
 </footer>
 
 <style lang="scss">
+	nav {
+		position: fixed;
+		padding: 1rem 2em;
+		z-index: 1;
+		h1 {
+			font-size: 1.5rem;
+			font-weight: 600;
+			padding: 0.2rem 0.8rem;
+			border-radius: 50rem;
+			corner-shape: squircle;
+			backdrop-filter: blur(7px);
+			background-color: rgb(0, 115, 115, 0.6);
+			cursor: pointer;
+			user-select: none;
+			outline: none;
+			box-shadow: 0 5px 25px 10px rgba(0, 59, 59, 0.1);
+		}
+	}
 	footer {
 		position: relative;
 		display: grid;

@@ -4,7 +4,7 @@
 	import Project from '$lib/Project.svelte';
 	import Button from '$lib/Button.svelte';
 	import { onMount } from 'svelte';
-	import { animate, hover, inView, stagger, type AnimationSequence } from 'motion';
+	import { animate, hover, press, inView, stagger, type AnimationSequence } from 'motion';
 
 	let languages = [
 		{ name: 'HTML', icon: 'skill-icons:html' },
@@ -66,9 +66,21 @@
 		animate(sequence);
 
 		hover('.btn-hover', (element) => {
-			animate(element, { scale: 1.1, rotate: -5 }, { type: 'spring', bounce: 0.7 });
+			animate(element, { scale: 1.1, rotate: -5}, { type: 'spring', bounce: 0.7 });
 			return () =>
-				animate(element, { scale: 1, rotate: 0 }, { type: 'spring', bounce: 0.4, duration: 0.4 });
+				animate(element, { scale: 1, rotate: 0}, { type: 'spring', bounce: 0.4, duration: 0.4 });
+		});
+
+		hover('.logo', (element) => {
+			animate(element, { scale: 1.1, rotate: -5, skewX: -3 }, { type: 'spring', bounce: 0.7 });
+			return () =>
+				animate(element, { scale: 1, rotate: 0, skewX: 0 }, { type: 'spring', bounce: 0.4, duration: 0.4 });
+		});
+
+		press('.logo', (element) => {
+			animate(element, { scale: 1.1, rotate: 5, skewX: 3 }, { type: 'spring', bounce: 0.7 });
+			return () =>
+				animate(element, { scale: 1.1, rotate: -5, skewX: -3 }, { type: 'spring', bounce: 0.7, duration: 0.6 });
 		});
 
 		hover('.pill-hover', (element) => {
@@ -119,7 +131,7 @@
 		<div class="dot-grid"></div>
 		<div class="section">
 			<div class="title-box">
-				<span class="name slide-up opacity-0">Mrinmoy Haloi</span>
+				<!-- <span class="name slide-up opacity-0">Mrinmoy Haloi</span> -->
 				<h1 class="text-[4rem] leading-snug sm:text-[5rem] md:text-[6rem] lg:text-[8rem]">
 					<span class="slide-up inline-block opacity-0">Front-End dev.</span>
 					<br />
