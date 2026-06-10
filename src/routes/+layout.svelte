@@ -11,7 +11,9 @@
 {@render children()}
 
 <footer>
-	<p class="p-4 text-center"><span>Crafted by</span> <span><b class="text-white">Mrinmoy Haloi</b> 2026</span></p>
+	<p class="p-4 text-center">
+		<span>Crafted by</span> <span><b class="text-white">Mrinmoy Haloi</b> 2026</span>
+	</p>
 	<a href="#home" class="text-white hover:text-blue-500" aria-label="Back to top link"
 		><iconify-icon icon="fa6-solid:arrow-up"></iconify-icon>
 	</a>
@@ -20,9 +22,17 @@
 <style lang="scss">
 	nav {
 		position: fixed;
-		padding: 1rem 2em;
+		padding: 1rem 0;
 		z-index: 1;
+		width: 85%;
+		left: 0;
+		right: 0;
+		margin-inline: auto;
+		@media (width > 500px) {
+			width: 95%;
+		}
 		h1 {
+			display: inline-block;
 			font-size: 1.5rem;
 			font-weight: 600;
 			padding: 0.2rem 0.8rem;
@@ -34,6 +44,9 @@
 			user-select: none;
 			outline: none;
 			box-shadow: 0 5px 25px 10px rgba(0, 59, 59, 0.1);
+			@media (width < 500px) {
+				font-size: 1.2rem;
+			}
 		}
 	}
 	footer {
