@@ -12,7 +12,10 @@
 
 			if (currentScrollY > lastScrollY && currentScrollY > 400) {
 				// Scrolling down -> hide the element
-				navbar.classList.add('scroll-hidden');
+				// navbar.classList.add('scroll-hidden');
+				setTimeout(() => {
+					navbar.classList.add('scroll-hidden');
+				}, 400);
 			} else {
 				// Scrolling up -> show the element
 				navbar.classList.remove('scroll-hidden');
