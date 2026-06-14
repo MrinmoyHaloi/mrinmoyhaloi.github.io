@@ -1,7 +1,27 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import '../app.scss';
 	import 'iconify-icon';
 	let { children } = $props();
+
+	onMount(() => {
+		let lastScrollY = window.scrollY;
+		let navbar = document.querySelector('nav')!;
+		window.addEventListener('scroll', () => {
+			const currentScrollY = window.scrollY;
+
+			if (currentScrollY > lastScrollY && currentScrollY > 400) {
+				// Scrolling down -> hide the element
+				navbar.classList.add('scroll-hidden');
+			} else {
+				// Scrolling up -> show the element
+				navbar.classList.remove('scroll-hidden');
+			}
+
+			// Update position for the next scroll event
+			lastScrollY = currentScrollY;
+		});
+	});
 </script>
 
 <nav>
@@ -28,9 +48,16 @@
 		left: 0;
 		right: 0;
 		margin-inline: auto;
+		transform: translateY(0);
+		transition: transform 0.3s ease-in-out;
 		@media (width > 500px) {
 			width: 95%;
 		}
+		&:global(.scroll-hidden) {
+			transform: translateY(-100%);
+			transition: transform 0.3s ease-in-out;
+		}
+
 		h1 {
 			display: inline-block;
 			font-size: 1.5rem;
