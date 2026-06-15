@@ -172,7 +172,7 @@
 					<h2>Myself,</h2>
 					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.5rem]">
 						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
-						with <b>5 years</b> of programming experience.
+						with <b>5+ years</b> of programming experience.
 					</p>
 					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.5rem]">
 						Also, I operate as a freelancer collaborating with clients worldwide to create fast and
