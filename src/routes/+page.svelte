@@ -66,21 +66,29 @@
 		animate(sequence);
 
 		hover('.btn-hover', (element) => {
-			animate(element, { scale: 1.1, rotate: -5}, { type: 'spring', bounce: 0.7 });
+			animate(element, { scale: 1.1, rotate: -5 }, { type: 'spring', bounce: 0.7 });
 			return () =>
-				animate(element, { scale: 1, rotate: 0}, { type: 'spring', bounce: 0.4, duration: 0.4 });
+				animate(element, { scale: 1, rotate: 0 }, { type: 'spring', bounce: 0.4, duration: 0.4 });
 		});
 
 		hover('.logo', (element) => {
 			animate(element, { scale: 1.1, rotate: -5, skewX: -3 }, { type: 'spring', bounce: 0.7 });
 			return () =>
-				animate(element, { scale: 1, rotate: 0, skewX: 0 }, { type: 'spring', bounce: 0.4, duration: 0.4 });
+				animate(
+					element,
+					{ scale: 1, rotate: 0, skewX: 0 },
+					{ type: 'spring', bounce: 0.4, duration: 0.4 }
+				);
 		});
 
 		press('.logo', (element) => {
 			animate(element, { scale: 1.1, rotate: 5, skewX: 3 }, { type: 'spring', bounce: 0.7 });
 			return () =>
-				animate(element, { scale: 1.1, rotate: -5, skewX: -3 }, { type: 'spring', bounce: 0.7, duration: 0.6 });
+				animate(
+					element,
+					{ scale: 1.1, rotate: -5, skewX: -3 },
+					{ type: 'spring', bounce: 0.7, duration: 0.6 }
+				);
 		});
 
 		hover('.pill-hover', (element) => {
@@ -164,10 +172,12 @@
 					<h2>Myself,</h2>
 					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.5rem]">
 						I'm <span class="name">Mrinmoy Haloi</span>, a Front End Developer from Assam, India
-						with 4 years of programming experience.
+						with <b>5 years</b> of programming experience.
 					</p>
 					<p class="text-[1.2rem] leading-9 sm:text-[1.5rem] md:text-[1.5rem]">
-						I specialize in creating user-friendly and performant interfaces with Svelte.
+						Also, I operate as a freelancer collaborating with clients worldwide to create fast and
+						accessible web experiences. Having succesfully delivered over <b>30</b> projects, I
+						maintain a consistent <b>5-star</b> rating on Fiverr.
 					</p>
 					<div class="mt-5 w-24">
 						<div
