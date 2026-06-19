@@ -28,7 +28,7 @@
 		{
 			name: 'Swirl Programming Language',
 			description:
-				'Website for the Swirl programming language, featuring downloads for respective platforms binaries fetched from the latest GitHub release.',
+				'The official website and distribution hub for the Swirl programming language. Features a dynamic download page that fetches real-time platform binaries via the GitHub API.',
 			skills: [
 				{ name: 'Svelte', icon: 'skill-icons:svelte' },
 				{ name: 'SCSS', icon: 'skill-icons:sass' },
@@ -42,7 +42,7 @@
 		{
 			name: 'FocusWave: Pomodoro Timer',
 			description:
-				'A customizable Pomodoro timer designed to enhance your productivity with a calming and focused experience. Radio support, customizable focus, and more.',
+				'A customizable Pomodoro timer designed to enhance your productivity with a calming and focused experience. Features music radio support, customizable focus settings, and more.',
 			skills: [
 				{ name: 'Svelte', icon: 'skill-icons:svelte' },
 				{ name: 'SCSS', icon: 'skill-icons:sass' },
